@@ -1,0 +1,574 @@
+extends layout
+
+block content
+  // ##### Hero Area Start #####
+  section.hero-area
+    .hero-post-slides.owl-carousel
+      // Single Hero Post
+      .single-hero-post.bg-overlay
+        // Post Image
+        .slide-img.bg-img(style="background-image: url(img/bg-img/bp3.JPG)")
+        .container.h-100
+          .row.h-100.align-items-center
+            .col-12
+              // Post Content
+              .hero-slides-content.text-center
+                h2 소나무 조경수 전문 형제농원입니다.
+                p
+                  | 우리 농장은 약 1000주의 다양한 소나무 조경수를 재배,
+                  | 판매하고 있습니다.
+                .welcome-btn-group
+                  a.btn.alazea-btn.mr-30(href="#") 둘러보기
+                  a.btn.alazea-btn.active(href="#") 문의하기
+      // Single Hero Post
+      .single-hero-post.bg-overlay
+        // Post Image
+        .slide-img.bg-img(style="background-image: url(img/bg-img/bp1.JPG)")
+        .container.h-100
+          .row.h-100.align-items-center
+            .col-12
+              // Post Content
+              .hero-slides-content.text-center
+                h2 소나무 조경수 전문 형제농원입니다.
+                p
+                  | 우리 농장은 약 1000주의 다양한 소나무 조경수를 재배,
+                  | 판매하고 있습니다.
+                .welcome-btn-group
+                  a.btn.alazea-btn.mr-30(href="#") 둘러보기
+                  a.btn.alazea-btn.active(href="#") 문의하기
+      // Single Hero Post
+      .single-hero-post.bg-overlay
+        // Post Image
+        .slide-img.bg-img(style="background-image: url(img/bg-img/bp2.JPG)")
+        .container.h-100
+          .row.h-100.align-items-center
+            .col-12
+              // Post Content
+              .hero-slides-content.text-center
+                h2 소나무 조경수 전문 형제농원입니다.
+                p
+                  | 우리 농장은 약 1000주의 다양한 소나무 조경수를 재배,
+                  | 판매하고 있습니다.
+                .welcome-btn-group
+                  a.btn.alazea-btn.mr-30(href="#") 둘러보기
+                  a.btn.alazea-btn.active(href="#") 문의하기
+  // ##### Hero Area End #####
+  // ##### Service Area Start #####
+  section.our-services-area.bg-gray.section-padding-100-0
+    .container
+      .row
+        .col-12
+          // Section Heading
+          .section-heading.text-center
+            h2 우리 형제농원에서는
+            p
+              | 100점 이상의 프리미엄 조경 소나무부터 20점 이하의 따박솔까지
+              | 다양한 조경수를 재배하고 있습니다.
+      .row.justify-content-between
+        .col-12.col-lg-5
+          .alazea-service-area.mb-100
+            // Single Service Area
+            .single-service-area.d-flex.align-items-center.wow.fadeInUp(data-wow-delay="100ms")
+              // Icon
+              .service-icon.mr-30
+                img(src="img/core-img/s1.png", alt="")
+              // Content
+              .service-content
+                h5 프리미엄 조경수
+                p
+                  | 저희 농원에서는 50점 부터 100점까지 다양한 프리미엄 조경수를
+                  | 보유하고 있습니다.
+            // Single Service Area
+            .single-service-area.d-flex.align-items-center.wow.fadeInUp(data-wow-delay="300ms")
+              // Icon
+              .service-icon.mr-30
+                img(src="img/core-img/s2.png", alt="")
+              // Content
+              .service-content
+                h5 전원주택 용 조경수
+                p 다양한 형태의 주택 용 관상 조경수를 보유하고 있습니다.
+            // Single Service Area
+            .single-service-area.d-flex.align-items-center.wow.fadeInUp(data-wow-delay="500ms")
+              // Icon
+              .service-icon.mr-30
+                img(src="img/core-img/s3.png", alt="")
+              // Content
+              .service-content
+                h5 판매 및 운반, 옮겨심기
+                p
+                  | 조경수 구매 시, 구매자와의 상의 하에 원하는 장소까지 나무를
+                  | 운반, 옮겨 심어 드립니다.
+        .col-12.col-lg-6
+          .alazea-video-area.bg-overlay.mb-100
+            div(style='position: relative; width: 100%; padding-bottom: 56.25%')
+              iframe(style='position: absolute; width: 100%; height: 97%' src='https://www.youtube.com/embed/gYJ3u1ae2XQ' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+
+  // ##### Service Area End #####
+  // ##### About Area Start #####
+  section.about-us-area.section-padding-100-0
+    .container
+      .row.justify-content-between
+        .col-12.col-lg-5
+          // Section Heading
+          .section-heading
+            h2 ABOUT US
+            p We are leading in the plants service fields.
+          p
+            | Quisque orci quam, vulputate non commodo finibus, molestie ac
+            | ante. Duis in sceleri quesem. Nulla sit amet varius nunc. Maecenas
+            | dui, tempeu ullam corper in.
+          // Progress Bar Content Area
+          .alazea-progress-bar.mb-50
+            // Single Progress Bar
+            div(class="single_progress_bar")
+              p Office plants
+              #bar1.barfiller
+                .tipWrap
+                  span.tip
+                span.fill(data-percentage="80")
+            // Single Progress Bar
+            div(class="single_progress_bar")
+              p Field manager
+              #bar2.barfiller
+                .tipWrap
+                  span.tip
+                span.fill(data-percentage="70")
+            // Single Progress Bar
+            div(class="single_progress_bar")
+              p Landscape design
+              #bar3.barfiller
+                .tipWrap
+                  span.tip
+                span.fill(data-percentage="85")
+            // Single Progress Bar
+            div(class="single_progress_bar")
+              p Garden Care
+              #bar4.barfiller
+                .tipWrap
+                  span.tip
+                span.fill(data-percentage="65")
+        .col-12.col-lg-6
+          .alazea-benefits-area
+            .row
+              // Single Benefits Area
+              .col-12.col-sm-6
+                .single-benefits-area
+                  img(src="img/core-img/b1.png", alt="")
+                  h5 Quality Products
+                  p
+                    | Intiam eu sagittis est, at commodo lacini libero. Praesent
+                    | dignissim sed odio vel aliquam manta lagorn.
+              // Single Benefits Area
+              .col-12.col-sm-6
+                .single-benefits-area
+                  img(src="img/core-img/b2.png", alt="")
+                  h5 Perfect Service
+                  p
+                    | Intiam eu sagittis est, at commodo lacini libero. Praesent
+                    | dignissim sed odio vel aliquam manta lagorn.
+              // Single Benefits Area
+              .col-12.col-sm-6
+                .single-benefits-area
+                  img(src="img/core-img/b3.png", alt="")
+                  h5 100% Natural
+                  p
+                    | Intiam eu sagittis est, at commodo lacini libero. Praesent
+                    | dignissim sed odio vel aliquam manta lagorn.
+              // Single Benefits Area
+              .col-12.col-sm-6
+                .single-benefits-area
+                  img(src="img/core-img/b4.png", alt="")
+                  h5 Environmentally friendly
+                  p
+                    | Intiam eu sagittis est, at commodo lacini libero. Praesent
+                    | dignissim sed odio vel aliquam manta lagorn.
+    .container
+      .row
+        .col-12
+          .border-line
+  // ##### About Area End #####
+  // ##### Portfolio Area Start #####
+  section.alazea-portfolio-area.section-padding-100-0
+    .container
+      .row
+        .col-12
+          // Section Heading
+          .section-heading.text-center
+            h2 농원 갤러리
+            p
+              | 조경수에 대한 자세한 정보는 판매 상품 페이지에 안내되어
+              | 있습니다.
+    .container-fluid
+      .row
+        .col-12
+          .alazea-portfolio-filter
+            .portfolio-filter
+              button.btn.active(data-filter="*") 전체
+              button.btn(data-filter=".agency") 기관용
+              button.btn(data-filter=".housing") 주택용
+              button.btn(data-filter=".baby") 다복솔
+      .row.alazea-portfolio
+        // Single Portfolio Area
+        div(class="col-12 col-sm-6 col-lg-3 single_portfolio_item design home-design wow fadeInUp", data-wow-delay="100ms")
+          // Portfolio Thumbnail
+          .portfolio-thumbnail.bg-img(style="background-image: url(img/bg-img/16.jpg)")
+          // Portfolio Hover Text
+          .portfolio-hover-overlay
+            a.portfolio-img.d-flex.align-items-center.justify-content-center(href="img/bg-img/16.jpg", title="Portfolio 1")
+              .port-hover-text
+                h3 Minimal Flower Store
+                h5 Office Plants
+        // Single Portfolio Area
+        div(class="col-12 col-sm-6 col-lg-3 single_portfolio_item garden wow fadeInUp", data-wow-delay="200ms")
+          // Portfolio Thumbnail
+          .portfolio-thumbnail.bg-img(style="background-image: url(img/bg-img/17.jpg)")
+          // Portfolio Hover Text
+          .portfolio-hover-overlay
+            a.portfolio-img.d-flex.align-items-center.justify-content-center(href="img/bg-img/17.jpg", title="Portfolio 2")
+              .port-hover-text
+                h3 Minimal Flower Store
+                h5 Office Plants
+        // Single Portfolio Area
+        div(class="col-12 col-sm-6 col-lg-3 single_portfolio_item garden design wow fadeInUp", data-wow-delay="300ms")
+          // Portfolio Thumbnail
+          .portfolio-thumbnail.bg-img(style="background-image: url(img/bg-img/18.jpg)")
+          // Portfolio Hover Text
+          .portfolio-hover-overlay
+            a.portfolio-img.d-flex.align-items-center.justify-content-center(href="img/bg-img/18.jpg", title="Portfolio 3")
+              .port-hover-text
+                h3 Minimal Flower Store
+                h5 Office Plants
+        // Single Portfolio Area
+        div(class="col-12 col-sm-6 col-lg-3 single_portfolio_item garden office-design wow fadeInUp", data-wow-delay="400ms")
+          // Portfolio Thumbnail
+          .portfolio-thumbnail.bg-img(style="background-image: url(img/bg-img/19.jpg)")
+          // Portfolio Hover Text
+          .portfolio-hover-overlay
+            a.portfolio-img.d-flex.align-items-center.justify-content-center(href="img/bg-img/19.jpg", title="Portfolio 4")
+              .port-hover-text
+                h3 Minimal Flower Store
+                h5 Office Plants
+        // Single Portfolio Area
+        div(class="col-12 col-sm-6 col-lg-3 single_portfolio_item design office-design wow fadeInUp", data-wow-delay="100ms")
+          // Portfolio Thumbnail
+          .portfolio-thumbnail.bg-img(style="background-image: url(img/bg-img/20.jpg)")
+          // Portfolio Hover Text
+          .portfolio-hover-overlay
+            a.portfolio-img.d-flex.align-items-center.justify-content-center(href="img/bg-img/20.jpg", title="Portfolio 5")
+              .port-hover-text
+                h3 Minimal Flower Store
+                h5 Office Plants
+        // Single Portfolio Area
+        div(class="col-12 col-sm-6 col-lg-3 single_portfolio_item garden wow fadeInUp", data-wow-delay="200ms")
+          // Portfolio Thumbnail
+          .portfolio-thumbnail.bg-img(style="background-image: url(img/bg-img/21.jpg)")
+          // Portfolio Hover Text
+          .portfolio-hover-overlay
+            a.portfolio-img.d-flex.align-items-center.justify-content-center(href="img/bg-img/21.jpg", title="Portfolio 6")
+              .port-hover-text
+                h3 Minimal Flower Store
+                h5 Office Plants
+        // Single Portfolio Area
+        div(class="col-12 col-lg-6 single_portfolio_item home-design wow fadeInUp", data-wow-delay="300ms")
+          // Portfolio Thumbnail
+          .portfolio-thumbnail.bg-img(style="background-image: url(img/bg-img/22.jpg)")
+          // Portfolio Hover Text
+          .portfolio-hover-overlay
+            a.portfolio-img.d-flex.align-items-center.justify-content-center(href="img/bg-img/22.jpg", title="Portfolio 7")
+              .port-hover-text
+                h3 Minimal Flower Store
+                h5 Office Plants
+  // ##### Portfolio Area End #####
+  // ##### Testimonial Area Start #####
+  section.testimonial-area.section-padding-100
+    .container
+      .row
+        .col-12
+          .testimonials-slides.owl-carousel
+            // Single Testimonial Slide
+            .single-testimonial-slide
+              .row.align-items-center
+                .col-12.col-md-6
+                  .testimonial-thumb
+                    img(src="img/bg-img/13.jpg", alt="")
+                .col-12.col-md-6
+                  .testimonial-content
+                    // Section Heading
+                    .section-heading
+                      h2 TESTIMONIAL
+                      p Some kind words from clients about Alazea
+                    p
+                      | “Alazea is a pleasure to work with. Their ideas are
+                      | creative, they came up with imaginative solutions to
+                      | some tricky issues, their landscaping and planting
+                      | contacts are equally excellent we have a beautiful but
+                      | also manageable garden as a result. Thank you!”
+                    .testimonial-author-info
+                      h6 Mr. Nick Jonas
+                      p CEO of NAVATECH
+            // Single Testimonial Slide
+            .single-testimonial-slide
+              .row.align-items-center
+                .col-12.col-md-6
+                  .testimonial-thumb
+                    img(src="img/bg-img/14.jpg", alt="")
+                .col-12.col-md-6
+                  .testimonial-content
+                    // Section Heading
+                    .section-heading
+                      h2 TESTIMONIAL
+                      p Some kind words from clients about Alazea
+                    p
+                      | “Alazea is a pleasure to work with. Their ideas are
+                      | creative, they came up with imaginative solutions to
+                      | some tricky issues, their landscaping and planting
+                      | contacts are equally excellent we have a beautiful but
+                      | also manageable garden as a result. Thank you!”
+                    .testimonial-author-info
+                      h6 Mr. Nazrul Islam
+                      p CEO of NAVATECH
+            // Single Testimonial Slide
+            .single-testimonial-slide
+              .row.align-items-center
+                .col-12.col-md-6
+                  .testimonial-thumb
+                    img(src="img/bg-img/15.jpg", alt="")
+                .col-12.col-md-6
+                  .testimonial-content
+                    // Section Heading
+                    .section-heading
+                      h2 TESTIMONIAL
+                      p Some kind words from clients about Alazea
+                    p
+                      | “Alazea is a pleasure to work with. Their ideas are
+                      | creative, they came up with imaginative solutions to
+                      | some tricky issues, their landscaping and planting
+                      | contacts are equally excellent we have a beautiful but
+                      | also manageable garden as a result. Thank you!”
+                    .testimonial-author-info
+                      h6 Mr. Jonas Nick
+                      p CEO of NAVATECH
+  // ##### Testimonial Area End #####
+  // ##### Product Area Start #####
+  section.new-arrivals-products-area.bg-gray.section-padding-100
+    .container
+      .row
+        .col-12
+          // Section Heading
+          .section-heading.text-center
+            h2 NEW ARRIVALS
+            p We have the latest products, it must be exciting for you
+      .row
+        // Single Product Area
+        .col-12.col-sm-6.col-lg-3
+          .single-product-area.mb-50.wow.fadeInUp(data-wow-delay="100ms")
+            // Product Image
+            .product-img
+              a(href="shop-details.html")
+                img(src="img/bg-img/9.jpg", alt="")
+              // Product Tag
+              .product-tag
+                a(href="#") Hot
+              .product-meta.d-flex
+                a.wishlist-btn(href="#")
+                  i(class="icon_heart_alt")
+                a.add-to-cart-btn(href="cart.html") Add to cart
+                a.compare-btn(href="#")
+                  i(class="arrow_left-right_alt")
+            // Product Info
+            .product-info.mt-15.text-center
+              a(href="shop-details.html")
+                p Cactus Flower
+              h6 $10.99
+        // Single Product Area
+        .col-12.col-sm-6.col-lg-3
+          .single-product-area.mb-50.wow.fadeInUp(data-wow-delay="200ms")
+            // Product Image
+            .product-img
+              a(href="shop-details.html")
+                img(src="img/bg-img/10.jpg", alt="")
+              .product-meta.d-flex
+                a.wishlist-btn(href="#")
+                  i(class="icon_heart_alt")
+                a.add-to-cart-btn(href="cart.html") Add to cart
+                a.compare-btn(href="#")
+                  i(class="arrow_left-right_alt")
+            // Product Info
+            .product-info.mt-15.text-center
+              a(href="shop-details.html")
+                p Cactus Flower
+              h6 $10.99
+        // Single Product Area
+        .col-12.col-sm-6.col-lg-3
+          .single-product-area.mb-50.wow.fadeInUp(data-wow-delay="300ms")
+            // Product Image
+            .product-img
+              a(href="shop-details.html")
+                img(src="img/bg-img/11.jpg", alt="")
+              .product-meta.d-flex
+                a.wishlist-btn(href="#")
+                  i(class="icon_heart_alt")
+                a.add-to-cart-btn(href="cart.html") Add to cart
+                a.compare-btn(href="#")
+                  i(class="arrow_left-right_alt")
+            // Product Info
+            .product-info.mt-15.text-center
+              a(href="shop-details.html")
+                p Cactus Flower
+              h6 $10.99
+        // Single Product Area
+        .col-12.col-sm-6.col-lg-3
+          .single-product-area.mb-50.wow.fadeInUp(data-wow-delay="400ms")
+            // Product Image
+            .product-img
+              a(href="shop-details.html")
+                img(src="img/bg-img/12.jpg", alt="")
+              // Product Tag
+              .product-tag.sale-tag
+                a(href="#") Hot
+              .product-meta.d-flex
+                a.wishlist-btn(href="#")
+                  i(class="icon_heart_alt")
+                a.add-to-cart-btn(href="cart.html") Add to cart
+                a.compare-btn(href="#")
+                  i(class="arrow_left-right_alt")
+            // Product Info
+            .product-info.mt-15.text-center
+              a(href="shop-details.html")
+                p Cactus Flower
+              h6 $10.99
+        .col-12.text-center
+          a.btn.alazea-btn(href="#") View All
+  // ##### Product Area End #####
+  // ##### Blog Area Start #####
+  section.alazea-blog-area.section-padding-100-0
+    .container
+      .row
+        .col-12
+          // Section Heading
+          .section-heading.text-center
+            h2 LATEST NEWS
+            p The breaking news about Gardening &amp;amp; House plants
+      .row.justify-content-center
+        // Single Blog Post Area
+        .col-12.col-md-6.col-lg-4
+          .single-blog-post.mb-100
+            .post-thumbnail.mb-30
+              a(href="single-post.html")
+                img(src="img/bg-img/6.jpg", alt="")
+            .post-content
+              a.post-title(href="single-post.html")
+                h5
+                  | Garden designers across the country forecast ideas shaping
+                  | the gardening world in 2018
+              .post-meta
+                a(href="#")
+                  i.fa.fa-clock-o(aria-hidden="true")
+                  | 20 Jun
+                  | 2018
+                a(href="#")
+                  i.fa.fa-user(aria-hidden="true")
+                  | Alan
+                  | Jackson
+              p.post-excerpt
+                | Integer luctus diam ac scerisque consectetur. Vimus ottawas
+                | nec lacus sit amet. Aenean interdus mid vitae.
+        // Single Blog Post Area
+        .col-12.col-md-6.col-lg-4
+          .single-blog-post.mb-100
+            .post-thumbnail.mb-30
+              a(href="single-post.html")
+                img(src="img/bg-img/7.jpg", alt="")
+            .post-content
+              a.post-title(href="single-post.html")
+                h5
+                  | 2018 Midwest Tree and Shrub Conference: Resilient Plants for
+                  | a Lasting Landscape
+              .post-meta
+                a(href="#")
+                  i.fa.fa-clock-o(aria-hidden="true")
+                  | 20 Jun
+                  | 2018
+                a(href="#")
+                  i.fa.fa-user(aria-hidden="true")
+                  | Christina
+                  | Aguilera
+              p.post-excerpt
+                | Integer luctus diam ac scerisque consectetur. Vimus ottawas
+                | nec lacus sit amet. Aenean interdus mid vitae.
+        // Single Blog Post Area
+        .col-12.col-md-6.col-lg-4
+          .single-blog-post.mb-100
+            .post-thumbnail.mb-30
+              a(href="single-post.html")
+                img(src="img/bg-img/8.jpg", alt="")
+            .post-content
+              a.post-title(href="single-post.html")
+                h5
+                  | The summer coming up, it’s time for both us and the flowers
+                  | to soak up the sunshine
+              .post-meta
+                a(href="#")
+                  i.fa.fa-clock-o(aria-hidden="true")
+                  | 19 Jun
+                  | 2018
+                a(href="#")
+                  i.fa.fa-user(aria-hidden="true")
+                  | Mason
+                  | Jenkins
+              p.post-excerpt
+                | Integer luctus diam ac scerisque consectetur. Vimus ottawas
+                | nec lacus sit amet. Aenean interdus mid vitae.
+  // ##### Blog Area End #####
+  // ##### Subscribe Area Start #####
+  section.subscribe-newsletter-area(style="background-image: url(img/bg-img/subscribe.png)")
+    .container
+      .row.align-items-center.justify-content-between
+        .col-12.col-lg-5
+          // Section Heading
+          .section-heading.mb-0
+            h2 Join the Newsletter
+            p
+              | Subscribe to our newsletter and get 10% off your first purchase
+        .col-12.col-lg-6
+          .subscribe-form
+            form(action="#", method="get")
+              input#subscribeEmail(type="email", name="subscribe-email", placeholder="Enter your email")
+              button.btn.alazea-btn(type="submit") SUBSCRIBE
+    // Subscribe Side Thumbnail
+    .subscribe-side-thumb.wow.fadeInUp(data-wow-delay="500ms")
+      img.first-img(src="img/core-img/leaf.png", alt="")
+  // ##### Subscribe Area End #####
+  // ##### Contact Area Start #####
+  section.contact-area.section-padding-100-0
+    .container
+      .row.align-items-center.justify-content-between
+        .col-12.col-lg-5
+          // Section Heading
+          .section-heading
+            h2 GET IN TOUCH
+            p Send us a message, we will call back later
+          // Contact Form Area
+          .contact-form-area.mb-100
+            form(action="#", method="post")
+              .row
+                .col-12.col-sm-6
+                  .form-group
+                    input#contact-name.form-control(type="text", placeholder="Your Name")
+                .col-12.col-sm-6
+                  .form-group
+                    input#contact-email.form-control(type="email", placeholder="Your Email")
+                .col-12
+                  .form-group
+                    input#contact-subject.form-control(type="text", placeholder="Subject")
+                .col-12
+                  .form-group
+                    textarea#message.form-control(name="message", cols="30", rows="10", placeholder="Message")
+                .col-12
+                  button.btn.alazea-btn.mt-15(type="submit")
+                    | Send Message
+        .col-12.col-lg-6
+          // Google Maps
+          .map-area.mb-100
+            iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5470.347705710245!2d126.64058715729146!3d35.388188388145174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35719dd82a294975%3A0xf2a663c2029807c3!2z7Y-s64-Z66eI7J2E7ZqM6rSA!5e0!3m2!1sko!2skr!4v1654207230885!5m2!1sko!2skr", width="600", height="450", style="border: 0", allowfullscreen, loading="lazy", referrerpolicy="no-referrer-when-downgrade")
+  // ##### Contact Area End #####

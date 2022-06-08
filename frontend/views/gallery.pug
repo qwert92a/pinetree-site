@@ -1,0 +1,160 @@
+extends layout
+
+block content
+  // ##### Breadcrumb Area Start #####
+  .breadcrumb-area
+    // Top Breadcrumb Area
+    .top-breadcrumb-area.bg-img.bg-overlay.d-flex.align-items-center.justify-content-center(style='background-image: url(img/bg-img/24.jpg);')
+      h2 PORTFOLIO
+    .container
+      .row
+        .col-12
+          nav(aria-label='breadcrumb')
+            ol.breadcrumb
+              li.breadcrumb-item
+                a(href='#')
+                  i.fa.fa-home
+                  |  Home
+              li.breadcrumb-item.active(aria-current='page') Portfolio
+  // ##### Breadcrumb Area End #####
+  // ##### Portfolio Area Start #####
+  section.alazea-portfolio-area.portfolio-page.section-padding-0-100
+    .container
+      .row
+        .col-12
+          // Section Heading
+          .section-heading.text-center
+            h2 OUR PORTFOLIO
+            p We devote all of our experience and efforts for creation
+    .container
+      .row
+        .col-12
+          .alazea-portfolio-filter
+            .portfolio-filter
+              button.btn.active(data-filter='*') All
+              button.btn(data-filter='.design') Coffee Design
+              button.btn(data-filter='.garden') Garden
+              button.btn(data-filter='.home-design') Home Design
+              button.btn(data-filter='.office-design') Office Design
+      .row.alazea-portfolio
+        // Single Portfolio Area
+        .col-12.col-sm-6.col-lg-3.single_portfolio_item.design.home-design
+          // Portfolio Thumbnail
+          .portfolio-thumbnail.bg-img(style='background-image: url(img/bg-img/16.jpg);')
+          // Portfolio Hover Text
+          .portfolio-hover-overlay
+            a.portfolio-img.d-flex.align-items-center.justify-content-center(href='img/bg-img/16.jpg' title='Portfolio 1')
+              .port-hover-text
+                h3 Minimal Flower Store
+                h5 Office Plants
+        // Single Portfolio Area
+        .col-12.col-sm-6.col-lg-6.single_portfolio_item.garden
+          // Portfolio Thumbnail
+          .portfolio-thumbnail.bg-img(style='background-image: url(img/bg-img/17.jpg);')
+          // Portfolio Hover Text
+          .portfolio-hover-overlay
+            a.portfolio-img.d-flex.align-items-center.justify-content-center(href='img/bg-img/17.jpg' title='Portfolio 2')
+              .port-hover-text
+                h3 Minimal Flower Store
+                h5 Office Plants
+        // Single Portfolio Area
+        .col-12.col-sm-6.col-lg-3.single_portfolio_item.garden.office-design
+          // Portfolio Thumbnail
+          .portfolio-thumbnail.bg-img(style='background-image: url(img/bg-img/19.jpg);')
+          // Portfolio Hover Text
+          .portfolio-hover-overlay
+            a.portfolio-img.d-flex.align-items-center.justify-content-center(href='img/bg-img/19.jpg' title='Portfolio 4')
+              .port-hover-text
+                h3 Minimal Flower Store
+                h5 Office Plants
+        // Single Portfolio Area
+        .col-12.col-sm-6.col-lg-3.single_portfolio_item.design.office-design
+          // Portfolio Thumbnail
+          .portfolio-thumbnail.bg-img(style='background-image: url(img/bg-img/20.jpg);')
+          // Portfolio Hover Text
+          .portfolio-hover-overlay
+            a.portfolio-img.d-flex.align-items-center.justify-content-center(href='img/bg-img/20.jpg' title='Portfolio 5')
+              .port-hover-text
+                h3 Minimal Flower Store
+                h5 Office Plants
+        // Single Portfolio Area
+        .col-12.col-sm-6.col-lg-3.single_portfolio_item.garden
+          // Portfolio Thumbnail
+          .portfolio-thumbnail.bg-img(style='background-image: url(img/bg-img/21.jpg);')
+          // Portfolio Hover Text
+          .portfolio-hover-overlay
+            a.portfolio-img.d-flex.align-items-center.justify-content-center(href='img/bg-img/21.jpg' title='Portfolio 6')
+              .port-hover-text
+                h3 Minimal Flower Store
+                h5 Office Plants
+        // Single Portfolio Area
+        .col-12.col-sm-6.col-lg-6.single_portfolio_item.home-design
+          // Portfolio Thumbnail
+          .portfolio-thumbnail.bg-img(style='background-image: url(img/bg-img/22.jpg);')
+          // Portfolio Hover Text
+          .portfolio-hover-overlay
+            a.portfolio-img.d-flex.align-items-center.justify-content-center(href='img/bg-img/22.jpg' title='Portfolio 7')
+              .port-hover-text
+                h3 Minimal Flower Store
+                h5 Office Plants
+        // Single Portfolio Area
+        .col-12.col-sm-6.col-lg-6.single_portfolio_item.design.home-design
+          // Portfolio Thumbnail
+          .portfolio-thumbnail.bg-img(style='background-image: url(img/bg-img/16.jpg);')
+          // Portfolio Hover Text
+          .portfolio-hover-overlay
+            a.portfolio-img.d-flex.align-items-center.justify-content-center(href='img/bg-img/16.jpg' title='Portfolio 1')
+              .port-hover-text
+                h3 Minimal Flower Store
+                h5 Office Plants
+        // Single Portfolio Area
+        .col-12.col-sm-6.col-lg-3.single_portfolio_item.garden
+          // Portfolio Thumbnail
+          .portfolio-thumbnail.bg-img(style='background-image: url(img/bg-img/17.jpg);')
+          // Portfolio Hover Text
+          .portfolio-hover-overlay
+            a.portfolio-img.d-flex.align-items-center.justify-content-center(href='img/bg-img/17.jpg' title='Portfolio 2')
+              .port-hover-text
+                h3 Minimal Flower Store
+                h5 Office Plants
+        // Single Portfolio Area
+        .col-12.col-sm-6.col-lg-3.single_portfolio_item.garden.office-design
+          // Portfolio Thumbnail
+          .portfolio-thumbnail.bg-img(style='background-image: url(img/bg-img/19.jpg);')
+          // Portfolio Hover Text
+          .portfolio-hover-overlay
+            a.portfolio-img.d-flex.align-items-center.justify-content-center(href='img/bg-img/19.jpg' title='Portfolio 4')
+              .port-hover-text
+                h3 Minimal Flower Store
+                h5 Office Plants
+        // Single Portfolio Area
+        .col-12.col-sm-6.col-lg-3.single_portfolio_item.design.office-design
+          // Portfolio Thumbnail
+          .portfolio-thumbnail.bg-img(style='background-image: url(img/bg-img/20.jpg);')
+          // Portfolio Hover Text
+          .portfolio-hover-overlay
+            a.portfolio-img.d-flex.align-items-center.justify-content-center(href='img/bg-img/20.jpg' title='Portfolio 5')
+              .port-hover-text
+                h3 Minimal Flower Store
+                h5 Office Plants
+        // Single Portfolio Area
+        .col-12.col-sm-6.col-lg-3.single_portfolio_item.garden
+          // Portfolio Thumbnail
+          .portfolio-thumbnail.bg-img(style='background-image: url(img/bg-img/21.jpg);')
+          // Portfolio Hover Text
+          .portfolio-hover-overlay
+            a.portfolio-img.d-flex.align-items-center.justify-content-center(href='img/bg-img/21.jpg' title='Portfolio 6')
+              .port-hover-text
+                h3 Minimal Flower Store
+                h5 Office Plants
+        // Single Portfolio Area
+        .col-12.col-sm-6.col-lg-6.single_portfolio_item.home-design
+          // Portfolio Thumbnail
+          .portfolio-thumbnail.bg-img(style='background-image: url(img/bg-img/22.jpg);')
+          // Portfolio Hover Text
+          .portfolio-hover-overlay
+            a.portfolio-img.d-flex.align-items-center.justify-content-center(href='img/bg-img/22.jpg' title='Portfolio 7')
+              .port-hover-text
+                h3 Minimal Flower Store
+                h5 Office Plants
+  // ##### Portfolio Area End #####

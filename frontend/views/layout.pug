@@ -1,0 +1,309 @@
+doctype html
+html(lang="ko")
+  head
+    meta(charset="UTF-8")
+    meta(name="description", content="IE=edge")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    // The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags
+    // Title
+    title 형제농원
+    // Favicon
+    link(rel="icon", href="img/core-img/favicon.ico")
+    // Core Stylesheet
+    link(rel="stylesheet", href="style.css")
+  body
+    // Preloader
+    .preloader.d-flex.align-items-center.justify-content-center
+      .preloader-circle
+      .preloader-img
+        img(src="img/core-img/leaf.png", alt="")
+    // ##### Header Area Start #####
+    header.header-area
+      // ***** Top Header Area *****
+      .top-header-area
+        .container
+          .row
+            .col-12
+              .top-header-content.d-flex.align-items-center.justify-content-between
+                // Top Header Content
+                .top-header-meta
+                  a(href="#", data-toggle="tooltip", data-placement="bottom", title="infodeercreative@gmail.com")
+                    i.fa.fa-envelope-o(aria-hidden="true")
+                    span 이메일: brotherplantation@gmail.com
+                  a(href="#", data-toggle="tooltip", data-placement="bottom", title="+1 234 122 122")
+                    i.fa.fa-phone(aria-hidden="true")
+                    span 연락처: 010 - 9981 - 9466
+                // Top Header Content
+                .top-header-meta.d-flex
+                  // Language Dropdown
+                  //
+                    <div class="language-dropdown">
+                    <div class="dropdown">
+                    <button
+                    class="btn btn-secondary dropdown-toggle mr-30"
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >
+                    Language
+                    </button>
+                    <div
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton"
+                    >
+                    <a class="dropdown-item" href="#">USA</a>
+                    <a class="dropdown-item" href="#">UK</a>
+                    <a class="dropdown-item" href="#">Bangla</a>
+                    <a class="dropdown-item" href="#">Hindi</a>
+                    <a class="dropdown-item" href="#">Spanish</a>
+                    <a class="dropdown-item" href="#">Latin</a>
+                    </div>
+                    </div>
+                    </div>
+                  // Login
+                  .login
+                    a(href="#")
+                      i.fa.fa-user(aria-hidden="true")
+                      span 로그인
+                  // Cart
+                  .cart
+                    a(href="#")
+                      i.fa.fa-shopping-cart(aria-hidden="true")
+                      span 찜한 상품 
+                        span.cart-quantity (1)
+      // ***** Navbar Area *****
+      .alazea-main-menu
+        .classy-nav-container.breakpoint-off
+          .container
+            // Menu
+            nav#alazeaNav.classy-navbar.justify-content-between
+              // Nav Brand
+              // <a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a>
+              a.nav-brand(href="/") 형제농원
+              // Navbar Toggler
+              .classy-navbar-toggler
+                span.navbarToggler
+                  span
+                  span
+                  span
+              // Menu
+              .classy-menu
+                // Close Button
+                .classycloseIcon
+                  .cross-wrap
+                    span.top
+                    span.bottom
+                // Navbar Start
+                .classynav
+                  ul
+                    li
+                      a(href="/") 홈으로
+                    li
+                      a(href="/about") 농장소개
+                    //
+                      <li>
+                      <a href="#">Pages</a>
+                      <ul class="dropdown">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="about.html">About</a></li>
+                      <li>
+                      <a href="shop.html">Shop</a>
+                      <ul class="dropdown">
+                      <li><a href="shop.html">Shop</a></li>
+                      <li>
+                      <a href="shop-details.html">Shop Details</a>
+                      </li>
+                      <li><a href="cart.html">Shopping Cart</a></li>
+                      <li><a href="checkout.html">Checkout</a></li>
+                      </ul>
+                      </li>
+                      <li>
+                      <a href="portfolio.html">Portfolio</a>
+                      <ul class="dropdown">
+                      <li><a href="portfolio.html">Portfolio</a></li>
+                      <li>
+                      <a href="single-portfolio.html"
+                      >Portfolio Details</a
+                      >
+                      </li>
+                      </ul>
+                      </li>
+                      <li>
+                      <a href="blog.html">Blog</a>
+                      <ul class="dropdown">
+                      <li><a href="blog.html">Blog</a></li>
+                      <li><a href="single-post.html">Blog Details</a></li>
+                      </ul>
+                      </li>
+                      <li><a href="contact.html">Contact</a></li>
+                      </ul>
+                      </li>
+                    li
+                      a(href="/shop") 판매상품
+                    li
+                      a(href="/gallery") 갤러리
+                    li
+                      a(href="/contact") 문의하기
+                  // Search Icon
+                  #searchIcon
+                    i.fa.fa-search(aria-hidden="true")
+                // Navbar End
+            // Search Form
+            .search-form
+              form(action="#", method="get")
+                input#search(type="search", name="search", placeholder="Type keywords &amp; press enter...")
+                button.d-none(type="submit")
+              // Close Icon
+              .closeIcon
+                i.fa.fa-times(aria-hidden="true")
+    // ##### Header Area End #####
+
+    block content
+
+    // ##### Footer Area Start #####
+    footer.footer-area.bg-img(style="background-image: url(img/bg-img/3.jpg)")
+      // Main Footer Area
+      .main-footer-area
+        .container
+          .row
+            // Single Footer Widget
+            .col-12.col-sm-6.col-lg-3
+              .single-footer-widget
+                .footer-logo.mb-30
+                  a(href="#")
+                    img(src="img/core-img/logo.png", alt="")
+                p
+                  | Lorem ipsum dolor sit samet, consectetur adipiscing elit.
+                  | India situs atione mantor
+                .social-info
+                  a(href="#")
+                    i.fa.fa-facebook(aria-hidden="true")
+                  a(href="#")
+                    i.fa.fa-twitter(aria-hidden="true")
+                  a(href="#")
+                    i.fa.fa-google-plus(aria-hidden="true")
+                  a(href="#")
+                    i.fa.fa-instagram(aria-hidden="true")
+                  a(href="#")
+                    i.fa.fa-linkedin(aria-hidden="true")
+            // Single Footer Widget
+            .col-12.col-sm-6.col-lg-3
+              .single-footer-widget
+                .widget-title
+                  h5 QUICK LINK
+                nav.widget-nav
+                  ul
+                    li
+                      a(href="#") Purchase
+                    li
+                      a(href="#") FAQs
+                    li
+                      a(href="#") Payment
+                    li
+                      a(href="#") News
+                    li
+                      a(href="#") Return
+                    li
+                      a(href="#") Advertise
+                    li
+                      a(href="#") Shipping
+                    li
+                      a(href="#") Career
+                    li
+                      a(href="#") Orders
+                    li
+                      a(href="#") Policities
+            // Single Footer Widget
+            .col-12.col-sm-6.col-lg-3
+              .single-footer-widget
+                .widget-title
+                  h5 BEST SELLER
+                // Single Best Seller Products
+                .single-best-seller-product.d-flex.align-items-center
+                  .product-thumbnail
+                    a(href="shop-details.html")
+                      img(src="img/bg-img/4.jpg", alt="")
+                  .product-info
+                    a(href="shop-details.html") Cactus Flower
+                    p $10.99
+                // Single Best Seller Products
+                .single-best-seller-product.d-flex.align-items-center
+                  .product-thumbnail
+                    a(href="shop-details.html")
+                      img(src="img/bg-img/5.jpg", alt="")
+                  .product-info
+                    a(href="shop-details.html") Tulip Flower
+                    p $11.99
+            // Single Footer Widget
+            .col-12.col-sm-6.col-lg-3
+              .single-footer-widget
+                .widget-title
+                  h5 CONTACT
+                .contact-information
+                  p
+                    span Address:
+                    | 505 Silk Rd, New York
+                  p
+                    span Phone:
+                    | +1 234 122 122
+                  p
+                    span Email:
+                    | info.deercreative@gmail.com
+                  p
+                    span Open hours:
+                    | Mon - Sun: 8 AM to 9 PM
+                  p
+                    span Happy hours:
+                    | Sat: 2 PM to 4 PM
+      // Footer Bottom Area
+      .footer-bottom-area
+        .container
+          .row
+            .col-12
+              .border-line
+            // Copywrite Text
+            .col-12.col-md-6
+              .copywrite-text
+                p
+                  | &amp;copy;
+                  // Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
+                  | Copyright &amp;copy;
+                  script.
+                    document.write(new Date().getFullYear());
+                  | All rights reserved | This template is made with
+                  i.fa.fa-heart-o(aria-hidden="true")
+                  | by
+                  a(href="https://colorlib.com", target="_blank") Colorlib
+                  // Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
+            // Footer Nav
+            .col-12.col-md-6
+              .footer-nav
+                nav
+                  ul
+                    li
+                      a(href="#") Home
+                    li
+                      a(href="#") About
+                    li
+                      a(href="#") Service
+                    li
+                      a(href="#") Portfolio
+                    li
+                      a(href="#") Blog
+                    li
+                      a(href="#") Contact
+    // ##### Footer Area End #####
+    // ##### All Javascript Files #####
+    // jQuery-2.2.4 js
+    script(src="js/jquery/jquery-2.2.4.min.js")
+    // Popper js
+    script(src="js/bootstrap/popper.min.js")
+    // Bootstrap js
+    script(src="js/bootstrap/bootstrap.min.js")
+    // All Plugins js
+    script(src="js/plugins/plugins.js")
+    // Active js
+    script(src="js/active.js")

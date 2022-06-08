@@ -298,7 +298,46 @@ img {
   background-position: center center;
   background-size: cover;
 }
+/* .bg-overlay::after {
+  background-image: linear-gradient(
+    rgba(17, 17, 17, 0.5),
+    rgba(17, 17, 17, 0.2)
+  );
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+} */
 .bg-overlay::after {
+  background-image: linear-gradient(
+    rgba(17, 17, 17, 0.3),
+    rgba(17, 17, 17, 0.1)
+  );
+  position: absolute;
+  z-index: -1;
+  top: 132px;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 132px);
+  content: '';
+}
+.bg-overlay::before {
+  background-image: linear-gradient(
+    rgba(17, 17, 17, 0.5),
+    rgba(17, 17, 17, 0.3)
+  );
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 132px;
+  content: '';
+}
+/* .bg-overlay::after {
   background-color: rgba(17, 17, 17, 0.5);
   position: absolute;
   z-index: -1;
@@ -307,7 +346,27 @@ img {
   width: 100%;
   height: 100%;
   content: '';
+} */
+/* .bg-overlay::after {
+  background-color: rgba(17, 17, 17, 0.25);
+  position: absolute;
+  z-index: -1;
+  top: 132px;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 132px);
+  content: '';
 }
+.bg-overlay::before {
+  background-color: rgba(17, 17, 17, 0.5);
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 132px;
+  content: '';
+} */
 
 .bg-fixed {
   background-attachment: fixed !important;

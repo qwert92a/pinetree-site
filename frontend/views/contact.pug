@@ -1,0 +1,82 @@
+extends layout
+
+block content
+  // ##### Breadcrumb Area Start #####
+  .breadcrumb-area
+    // Top Breadcrumb Area
+    .top-breadcrumb-area.bg-img.bg-overlay.d-flex.align-items-center.justify-content-center(style='background-image: url(img/bg-img/24.jpg);')
+      h2 Contact US
+    .container
+      .row
+        .col-12
+          nav(aria-label='breadcrumb')
+            ol.breadcrumb
+              li.breadcrumb-item
+                a(href='#')
+                  i.fa.fa-home
+                  |  Home
+              li.breadcrumb-item.active(aria-current='page') Contact
+  // ##### Breadcrumb Area End #####
+  // ##### Contact Area Info Start #####
+  .contact-area-info.section-padding-0-100
+    .container
+      .row.align-items-center.justify-content-between
+        // Contact Thumbnail
+        .col-12.col-md-6
+          .contact--thumbnail
+            img(src='img/bg-img/25.jpg' alt='')
+        .col-12.col-md-5
+          // Section Heading
+          .section-heading
+            h2 CONTACT US
+            p We are improving our services to serve you better.
+          // Contact Information
+          .contact-information
+            p
+              span Address:
+              |  505 Silk Rd, New York
+            p
+              span Phone:
+              |  +1 234 122 122
+            p
+              span Email:
+              |  info.deercreative@gmail.com
+            p
+              span Open hours:
+              |  Mon - Sun: 8 AM to 9 PM
+            p
+              span Happy hours:
+              |  Sat: 2 PM to 4 PM
+  // ##### Contact Area Info End #####
+  // ##### Contact Area Start #####
+  section.contact-area
+    .container
+      .row.align-items-center.justify-content-between
+        .col-12.col-lg-5
+          // Section Heading
+          .section-heading
+            h2 GET IN TOUCH
+            p Send us a message, we will call back later
+          // Contact Form Area
+          .contact-form-area.mb-100
+            form(action='#' method='post')
+              .row
+                .col-12.col-md-6
+                  .form-group
+                    input#contact-name.form-control(type='text' placeholder='Your Name')
+                .col-12.col-md-6
+                  .form-group
+                    input#contact-email.form-control(type='email' placeholder='Your Email')
+                .col-12
+                  .form-group
+                    input#contact-subject.form-control(type='text' placeholder='Subject')
+                .col-12
+                  .form-group
+                    textarea#message.form-control(name='message' cols='30' rows='10' placeholder='Message')
+                .col-12
+                  button.btn.alazea-btn.mt-15(type='submit') Send Message
+        .col-12.col-lg-6
+          // Google Maps
+          .map-area.mb-100
+            iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22236.40558254599!2d-118.25292394686001!3d34.057682914027104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2z4Kay4Ka4IOCmj-CmnuCnjeCmnOCnh-CmsuCnh-CmuCwg4KaV4KeN4Kav4Ka-4Kay4Ka_4Kar4KeL4Kaw4KeN4Kao4Ka_4Kav4Ka84Ka-LCDgpq7gpr7gprDgp43gppXgpr_gpqgg4Kav4KeB4KaV4KeN4Kak4Kaw4Ka-4Ka34KeN4Kaf4KeN4Kaw!5e0!3m2!1sbn!2sbd!4v1532328708137' allowfullscreen='')
+  // ##### Contact Area End #####

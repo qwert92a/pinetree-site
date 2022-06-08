@@ -1,0 +1,361 @@
+extends layout 
+
+block content
+  // ##### Breadcrumb Area Start #####
+  .breadcrumb-area
+    // Top Breadcrumb Area
+    .top-breadcrumb-area.bg-img.bg-overlay.d-flex.align-items-center.justify-content-center(style='background-image: url(img/bg-img/24.jpg)')
+      h2 ABOUT US
+    .container
+      .row
+        .col-12
+          nav(aria-label='breadcrumb')
+            ol.breadcrumb
+              li.breadcrumb-item
+                a(href='#')
+                  i.fa.fa-home
+                  |  Home
+              li.breadcrumb-item.active(aria-current='page')
+                | About
+  // ##### Breadcrumb Area End #####
+  // ##### About Area Start #####
+  section.about-us-area
+    .container
+      .row.justify-content-between
+        .col-12.col-lg-5
+          // Section Heading
+          .section-heading
+            h2 ABOUT US
+            p We are leading in the plants service fields.
+          p
+            | Quisque orci quam, vulputate non commodo finibus, molestie ac
+            | ante. Duis in sceleri quesem. Nulla sit amet varius nunc. Maecenas
+            | dui, tempeu ullam corper in.
+          // Progress Bar Content Area
+          .alazea-progress-bar.mb-50
+            // Single Progress Bar
+            .single_progress_bar
+              p Office plants
+              #bar1.barfiller
+                .tipWrap
+                  span.tip
+                span.fill(data-percentage='80')
+            // Single Progress Bar
+            .single_progress_bar
+              p Field manager
+              #bar2.barfiller
+                .tipWrap
+                  span.tip
+                span.fill(data-percentage='70')
+            // Single Progress Bar
+            .single_progress_bar
+              p Landscape design
+              #bar3.barfiller
+                .tipWrap
+                  span.tip
+                span.fill(data-percentage='85')
+            // Single Progress Bar
+            .single_progress_bar
+              p Garden Care
+              #bar4.barfiller
+                .tipWrap
+                  span.tip
+                span.fill(data-percentage='65')
+        .col-12.col-lg-6
+          .alazea-benefits-area
+            .row
+              // Single Benefits Area
+              .col-12.col-sm-6
+                .single-benefits-area
+                  img(src='img/core-img/b1.png' alt='')
+                  h5 Quality Products
+                  p
+                    | Intiam eu sagittis est, at commodo lacini libero. Praesent
+                    | dignissim sed odio vel aliquam manta lagorn.
+              // Single Benefits Area
+              .col-12.col-sm-6
+                .single-benefits-area
+                  img(src='img/core-img/b2.png' alt='')
+                  h5 Perfect Service
+                  p
+                    | Intiam eu sagittis est, at commodo lacini libero. Praesent
+                    | dignissim sed odio vel aliquam manta lagorn.
+              // Single Benefits Area
+              .col-12.col-sm-6
+                .single-benefits-area
+                  img(src='img/core-img/b3.png' alt='')
+                  h5 100% Natural
+                  p
+                    | Intiam eu sagittis est, at commodo lacini libero. Praesent
+                    | dignissim sed odio vel aliquam manta lagorn.
+              // Single Benefits Area
+              .col-12.col-sm-6
+                .single-benefits-area
+                  img(src='img/core-img/b4.png' alt='')
+                  h5 Environmentally friendly
+                  p
+                    | Intiam eu sagittis est, at commodo lacini libero. Praesent
+                    | dignissim sed odio vel aliquam manta lagorn.
+    .container
+      .row
+        .col-12
+          .border-line
+  // ##### About Area End #####
+  // ##### Service Area Start #####
+  section.our-services-area.bg-gray.section-padding-100-0
+    .container
+      .row
+        .col-12
+          // Section Heading
+          .section-heading.text-center
+            h2 OUR SERVICES
+            p We provide the perfect service for you.
+      .row.align-items-center.justify-content-between
+        .col-12.col-lg-5
+          .alazea-service-area.mb-100
+            // Single Service Area
+            .single-service-area.d-flex.align-items-center
+              // Icon
+              .service-icon.mr-30
+                img(src='img/core-img/s1.png' alt='')
+              // Content
+              .service-content
+                h5 Plants Care
+                p
+                  | In Aenean purus, pretium sito amet sapien denim moste
+                  | consectet sedoni urna placerat sodales.service its.
+            // Single Service Area
+            .single-service-area.d-flex.align-items-center
+              // Icon
+              .service-icon.mr-30
+                img(src='img/core-img/s2.png' alt='')
+              // Content
+              .service-content
+                h5 Pressure Washing
+                p
+                  | In Aenean purus, pretium sito amet sapien denim moste
+                  | consectet sedoni urna placerat sodales.service its.
+            // Single Service Area
+            .single-service-area.d-flex.align-items-center
+              // Icon
+              .service-icon.mr-30
+                img(src='img/core-img/s3.png' alt='')
+              // Content
+              .service-content
+                h5 Tree Service &amp; Trimming
+                p
+                  | In Aenean purus, pretium sito amet sapien denim moste
+                  | consectet sedoni urna placerat sodales.service its.
+        .col-12.col-lg-6
+          .alazea-video-area.bg-overlay.mb-100
+            img(src='img/bg-img/23.jpg' alt='')
+            a.video-icon(href='http://www.youtube.com/watch?v=7HKoqNJtMTQ')
+              i.fa.fa-play(aria-hidden='true')
+  // ##### Service Area End #####
+  // ##### Testimonial Area Start #####
+  section.testimonial-area.section-padding-100
+    .container
+      .row
+        .col-12
+          .testimonials-slides.owl-carousel
+            // Single Testimonial Slide
+            .single-testimonial-slide
+              .row.align-items-center
+                .col-12.col-md-6
+                  .testimonial-thumb
+                    img(src='img/bg-img/13.jpg' alt='')
+                .col-12.col-md-6
+                  .testimonial-content
+                    // Section Heading
+                    .section-heading
+                      h2 TESTIMONIAL
+                      p Some kind words from clients about Alazea
+                    p
+                      | &ldquo;Alazea is a pleasure to work with. Their ideas are
+                      | creative, they came up with imaginative solutions to
+                      | some tricky issues, their landscaping and planting
+                      | contacts are equally excellent we have a beautiful but
+                      | also manageable garden as a result. Thank you!&rdquo;
+                    .testimonial-author-info
+                      h6 Mr. Nick Jonas
+                      p CEO of NAVATECH
+            // Single Testimonial Slide
+            .single-testimonial-slide
+              .row.align-items-center
+                .col-12.col-md-6
+                  .testimonial-thumb
+                    img(src='img/bg-img/14.jpg' alt='')
+                .col-12.col-md-6
+                  .testimonial-content
+                    // Section Heading
+                    .section-heading
+                      h2 TESTIMONIAL
+                      p Some kind words from clients about Alazea
+                    p
+                      | &ldquo;Alazea is a pleasure to work with. Their ideas are
+                      | creative, they came up with imaginative solutions to
+                      | some tricky issues, their landscaping and planting
+                      | contacts are equally excellent we have a beautiful but
+                      | also manageable garden as a result. Thank you!&rdquo;
+                    .testimonial-author-info
+                      h6 Mr. Nazrul Islam
+                      p CEO of NAVATECH
+            // Single Testimonial Slide
+            .single-testimonial-slide
+              .row.align-items-center
+                .col-12.col-md-6
+                  .testimonial-thumb
+                    img(src='img/bg-img/15.jpg' alt='')
+                .col-12.col-md-6
+                  .testimonial-content
+                    // Section Heading
+                    .section-heading
+                      h2 TESTIMONIAL
+                      p Some kind words from clients about Alazea
+                    p
+                      | &ldquo;Alazea is a pleasure to work with. Their ideas are
+                      | creative, they came up with imaginative solutions to
+                      | some tricky issues, their landscaping and planting
+                      | contacts are equally excellent we have a beautiful but
+                      | also manageable garden as a result. Thank you!&rdquo;
+                    .testimonial-author-info
+                      h6 Mr. Jonas Nick
+                      p CEO of NAVATECH
+  // ##### Testimonial Area End #####
+  // ##### Cool Facts Area Start #####
+  section.cool-facts-area.bg-img.section-padding-100-0(style='background-image: url(img/bg-img/cool-facts.png)')
+    .container
+      .row
+        // Single Cool Facts Area
+        .col-12.col-sm-6.col-md-3
+          .single-cool-fact.d-flex.align-items-center.justify-content-center.mb-100
+            .cf-icon
+              img(src='img/core-img/cf1.png' alt='')
+            .cf-content
+              h2
+                span.counter 20
+              h6 AWARDS
+        // Single Cool Facts Area
+        .col-12.col-sm-6.col-md-3
+          .single-cool-fact.d-flex.align-items-center.justify-content-center.mb-100
+            .cf-icon
+              img(src='img/core-img/cf2.png' alt='')
+            .cf-content
+              h2
+                span.counter 70
+              h6 PROJECTS
+        // Single Cool Facts Area
+        .col-12.col-sm-6.col-md-3
+          .single-cool-fact.d-flex.align-items-center.justify-content-center.mb-100
+            .cf-icon
+              img(src='img/core-img/cf3.png' alt='')
+            .cf-content
+              h2
+                span.counter 30
+                | +
+              h6 HAPPY CLIENTS
+        // Single Cool Facts Area
+        .col-12.col-sm-6.col-md-3
+          .single-cool-fact.d-flex.align-items-center.justify-content-center.mb-100
+            .cf-icon
+              img(src='img/core-img/cf4.png' alt='')
+            .cf-content
+              h2
+                span.counter 80
+                | K+
+              h6 REVENUE
+    // Side Image
+    .side-img.wow.fadeInUp(data-wow-delay='500ms')
+      img(src='img/core-img/pot.png' alt='')
+  // ##### Cool Facts Area End #####
+  // ##### Team Area Start #####
+  section.team-area.section-padding-100-0
+    .container
+      .row
+        .col-12
+          // Section Heading
+          .section-heading.text-center
+            h2 OUR TEAM
+            p A team of dedicated experienced professionals.
+      .row
+        // Single Team Member Area
+        .col-12.col-sm-6.col-lg-3
+          .single-team-member.text-center.mb-100
+            // Team Member Thumb
+            .team-member-thumb
+              img(src='img/bg-img/team1.png' alt='')
+              // Social Info
+              .team-member-social-info
+                a(href='#')
+                  i.fa.fa-facebook(aria-hidden='true')
+                a(href='#')
+                  i.fa.fa-twitter(aria-hidden='true')
+                a(href='#')
+                  i.fa.fa-google-plus(aria-hidden='true')
+                a(href='#')
+                  i.fa.fa-linkedin(aria-hidden='true')
+            // Team Member Info
+            .team-member-info.mt-30
+              h5 Joseph Corbin
+              p CEO &amp; Founder
+        // Single Team Member Area
+        .col-12.col-sm-6.col-lg-3
+          .single-team-member.text-center.mb-100
+            // Team Member Thumb
+            .team-member-thumb
+              img(src='img/bg-img/team2.png' alt='')
+              // Social Info
+              .team-member-social-info
+                a(href='#')
+                  i.fa.fa-facebook(aria-hidden='true')
+                a(href='#')
+                  i.fa.fa-twitter(aria-hidden='true')
+                a(href='#')
+                  i.fa.fa-google-plus(aria-hidden='true')
+                a(href='#')
+                  i.fa.fa-linkedin(aria-hidden='true')
+            // Team Member Info
+            .team-member-info.mt-30
+              h5 Tasha Deserio
+              p Garden Designer
+        // Single Team Member Area
+        .col-12.col-sm-6.col-lg-3
+          .single-team-member.text-center.mb-100
+            // Team Member Thumb
+            .team-member-thumb
+              img(src='img/bg-img/team3.png' alt='')
+              // Social Info
+              .team-member-social-info
+                a(href='#')
+                  i.fa.fa-facebook(aria-hidden='true')
+                a(href='#')
+                  i.fa.fa-twitter(aria-hidden='true')
+                a(href='#')
+                  i.fa.fa-google-plus(aria-hidden='true')
+                a(href='#')
+                  i.fa.fa-linkedin(aria-hidden='true')
+            // Team Member Info
+            .team-member-info.mt-30
+              h5 Cody Baker
+              p Plan Manager
+        // Single Team Member Area
+        .col-12.col-sm-6.col-lg-3
+          .single-team-member.text-center.mb-100
+            // Team Member Thumb
+            .team-member-thumb
+              img(src='img/bg-img/team4.png' alt='')
+              // Social Info
+              .team-member-social-info
+                a(href='#')
+                  i.fa.fa-facebook(aria-hidden='true')
+                a(href='#')
+                  i.fa.fa-twitter(aria-hidden='true')
+                a(href='#')
+                  i.fa.fa-google-plus(aria-hidden='true')
+                a(href='#')
+                  i.fa.fa-linkedin(aria-hidden='true')
+            // Team Member Info
+            .team-member-info.mt-30
+              h5 Pearl Kansas
+              p Marketer
+  // ##### Team Area End #####
