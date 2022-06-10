@@ -1,0 +1,367 @@
+extends layout
+
+block content
+  // ##### Breadcrumb Area Start #####
+  .breadcrumb-area
+    // Top Breadcrumb Area
+    .top-breadcrumb-area.bg-img.bg-overlay.d-flex.align-items-center.justify-content-center(style='background-image: url(/img/bg-img/bp3.JPG);')
+      //- h2 SHOP DETAILS
+    .container
+      .row
+        .col-12
+          nav(aria-label='breadcrumb')
+            ol.breadcrumb
+              li.breadcrumb-item
+                a(href='#')
+                  i.fa.fa-home
+                  |  홈
+              li.breadcrumb-item
+                a(href='#') 판매 상품
+              li.breadcrumb-item.active(aria-current='page') 상세 페이지
+  // ##### Breadcrumb Area End #####
+  // ##### Single Product Details Area Start #####
+  section.single_product_details_area.mb-50
+    .produts-details--content.mb-50
+      .container
+        .row.justify-content-between
+          .col-12.col-md-6.col-lg-5
+            .single_product_thumb
+              #product_details_slider.carousel.slide(data-ride='carousel')
+                .carousel-inner
+                  each val, index in product.images
+                    if index === 0
+                      .carousel-item.active
+                        a.product-img(href=val title='Product Image')
+                          img.d-block.w-100(src=val alt='1')
+                    else
+                      .carousel-item
+                        a.product-img(href=val title='Product Image')
+                          img.d-block.w-100(src=val alt='1')
+
+                  //- .carousel-item.active
+                  //-   a.product-img(href='img/bg-img/45.png' title='Product Image')
+                  //-     img.d-block.w-100(src='img/bg-img/45.png' alt='1')
+                  //- .carousel-item
+                  //-   a.product-img(href='img/bg-img/46.png' title='Product Image')
+                  //-     img.d-block.w-100(src='img/bg-img/46.png' alt='1')
+                  //- .carousel-item
+                  //-   a.product-img(href='img/bg-img/47.png' title='Product Image')
+                  //-     img.d-block.w-100(src='img/bg-img/47.png' alt='1')
+                  //- .carousel-item
+                  //-   a.product-img(href='img/bg-img/48.png' title='Product Image')
+                  //-     img.d-block.w-100(src='img/bg-img/48.png' alt='1')
+                  //- .carousel-item
+                  //-   a.product-img(href='img/bg-img/49.jpg' title='Product Image')
+                  //-     img.d-block.w-100(src='img/bg-img/49.jpg' alt='1')
+                  //- .carousel-item
+                  //-   a.product-img(href='img/bg-img/45.png' title='Product Image')
+                  //-     img.d-block.w-100(src='img/bg-img/45.png' alt='1')
+                  //- .carousel-item
+                  //-   a.product-img(href='img/bg-img/46.png' title='Product Image')
+                  //-     img.d-block.w-100(src='img/bg-img/46.png' alt='1')
+                  //- .carousel-item
+                  //-   a.product-img(href='img/bg-img/47.png' title='Product Image')
+                  //-     img.d-block.w-100(src='img/bg-img/47.png' alt='1')
+                  //- .carousel-item
+                  //-   a.product-img(href='img/bg-img/48.png' title='Product Image')
+                  //-     img.d-block.w-100(src='img/bg-img/48.png' alt='1')
+                  //- .carousel-item
+                  //-   a.product-img(href='img/bg-img/49.jpg' title='Product Image')
+                  //-     img.d-block.w-100(src='img/bg-img/49.jpg' alt='1')
+                ol.carousel-indicators
+                  each val, index in product.images
+                    if index === 0
+                      li.active(data-target='#product_details_slider' data-slide-to=index style='background-image: url('+val+');')
+                    else
+                      li(data-target='#product_details_slider' data-slide-to=index style='background-image: url('+val+');')
+
+                  //- li.active(data-target='#product_details_slider' data-slide-to='0' style='background-image: url(img/bg-img/45.png);')
+                  //- li(data-target='#product_details_slider' data-slide-to='1' style='background-image: url(img/bg-img/46.png);')
+                  //- li(data-target='#product_details_slider' data-slide-to='2' style='background-image: url(img/bg-img/47.png);')
+                  //- li(data-target='#product_details_slider' data-slide-to='3' style='background-image: url(img/bg-img/48.png);')
+                  //- li(data-target='#product_details_slider' data-slide-to='4' style='background-image: url(img/bg-img/49.jpg);')
+                  //- li(data-target='#product_details_slider' data-slide-to='5' style='background-image: url(img/bg-img/45.png);')
+                  //- li(data-target='#product_details_slider' data-slide-to='6' style='background-image: url(img/bg-img/46.png);')
+                  //- li(data-target='#product_details_slider' data-slide-to='7' style='background-image: url(img/bg-img/47.png);')
+                  //- li(data-target='#product_details_slider' data-slide-to='8' style='background-image: url(img/bg-img/48.png);')
+                  //- li(data-target='#product_details_slider' data-slide-to='9' style='background-image: url(img/bg-img/49.jpg);')
+          .col-12.col-md-6
+            .single_product_desc
+              h4.title= product.name
+              h4.price= product.grade + ' 점'
+
+              .products--meta
+                p
+                  span 상품 번호:
+                  span= product.id
+                p
+                  span 점수:
+                  span= product.grade + ' 점'
+                p
+                  span 높이:
+                  span= product.height + ' m'
+                p
+                  span 둘레:
+                  span= product.circumference + ' m'
+              //- .short_overview
+              //-   p= '높이: ' + product.height+' m'
+              //-   p= '둘레: ' + product.circumference+' m'
+              .cart--area.d-flex.flex-wrap.align-items-center
+                // Add to Cart Form
+                form.cart.clearfix.d-flex.align-items-center(method='post', style='margin-top: 2em;')
+                  // Wishlist & Compare
+                  .wishlist-compare.d-flex.flex-wrap.align-items-center
+                    a.wishlist-btn.ml-15(href='#')
+                      i.icon_heart_alt
+                    //- a.compare-btn.ml-15(href='#')
+                    //-   i.arrow_left-right_alt
+                  //- .quantity
+                  //-   span.qty-minus(onclick="var effect = document.getElementById('qty'); var qty = effect.value; if( !isNaN( qty ) && qty > 1 ) effect.value--;return false;")
+                  //-     i.fa.fa-minus(aria-hidden='true')
+                  //-   input#qty.qty-text(type='number' step='1' min='1' max='12' name='quantity' value='1')
+                  //-   span.qty-plus(onclick="var effect = document.getElementById('qty'); var qty = effect.value; if( !isNaN( qty )) effect.value++;return false;")
+                  //-     i.fa.fa-plus(aria-hidden='true')
+                  button.btn.alazea-btn.ml-15(type='submit' name='addtocart' value='5') 상품 문의하기
+                
+              //- .products--meta
+              //-   p
+              //-     span 상품 번호:
+              //-     span 244
+              //-   p
+              //-     span 점수:
+              //-     span 40 점
+              //-   p
+              //-     span 높이:
+              //-     span 2m
+              //-   p
+              //-     span 둘레:
+              //-     span 50cm
+                //- p
+                //-   span Share on:
+                //-   span
+                //-     a(href='#')
+                //-       i.fa.fa-facebook
+                //-     a(href='#')
+                //-       i.fa.fa-twitter
+                //-     a(href='#')
+                //-       i.fa.fa-pinterest
+                //-     a(href='#')
+                //-       i.fa.fa-google-plus
+    .container
+      .row
+        .col-12
+          .product_details_tab.clearfix
+            // Tabs
+            ul#product-details-tab.nav.nav-tabs(role='tablist')
+              li.nav-item
+                a.nav-link.active(href='#description' data-toggle='tab' role='tab') 상품 설명
+              li.nav-item
+                a.nav-link(href='#addi-info' data-toggle='tab' role='tab') 자주하는 질문
+              //- li.nav-item
+              //-   a.nav-link(href='#reviews' data-toggle='tab' role='tab')
+              //-     | Reviews 
+              //-     span.text-muted (1)
+            // Tab Content
+            .tab-content
+              #description.tab-pane.fade.show.active(role='tabpanel')
+                .description_area
+                  //- p
+                  //-   | 개인 주택용 조경수로 적절한 소나무입니다.
+                  //- p
+                  //-   | 자연적인 상태 그대로 생장한 수형인 자연형 조경수입니다.
+                  p= product.description
+              #addi-info.tab-pane.fade(role='tabpanel')
+                .additional_info_area
+                  p
+                    | 상품에 관한 더 자세한 문의는 어떻게 하나요?
+                    br
+                    span
+                      | 상품 사진 옆의 상품 문의하기를 통해 내용을 적어주시면 문자 또는 이메일을 통해 답변드립니다.
+                  p
+                    | 전화로 문의도 가능한가요?
+                    br
+                    span
+                      | 홈페이지 가장 상단에 보이는 번호를 통해 원하는 문의 시간을 문자로 보내주시면 조율 후 가능합니다.
+                  //- p
+                  //-   | Product Receipt and Acceptance Confirmation Process
+                  //-   br
+                  //-   span
+                  //-     | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ducimus, temporibus soluta impedit minus rerum?
+                  //- p
+                  //-   | How do I cancel my order?
+                  //-   br
+                  //-   span
+                  //-     | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum eius eum, minima!
+              //- #reviews.tab-pane.fade(role='tabpanel')
+                .reviews_area
+                  ul
+                    li
+                      .single_user_review.mb-15
+                        .review-rating
+                          i.fa.fa-star(aria-hidden='true')
+                          i.fa.fa-star(aria-hidden='true')
+                          i.fa.fa-star(aria-hidden='true')
+                          i.fa.fa-star(aria-hidden='true')
+                          i.fa.fa-star(aria-hidden='true')
+                          span for Quality
+                        .review-details
+                          p
+                            | by 
+                            a(href='#') Colorlib
+                            |  on 
+                            span 12 Sep 2018
+                      .single_user_review.mb-15
+                        .review-rating
+                          i.fa.fa-star(aria-hidden='true')
+                          i.fa.fa-star(aria-hidden='true')
+                          i.fa.fa-star(aria-hidden='true')
+                          i.fa.fa-star(aria-hidden='true')
+                          i.fa.fa-star(aria-hidden='true')
+                          span for Design
+                        .review-details
+                          p
+                            | by 
+                            a(href='#') Colorlib
+                            |  on 
+                            span 12 Sep 2018
+                      .single_user_review
+                        .review-rating
+                          i.fa.fa-star(aria-hidden='true')
+                          i.fa.fa-star(aria-hidden='true')
+                          i.fa.fa-star(aria-hidden='true')
+                          i.fa.fa-star(aria-hidden='true')
+                          i.fa.fa-star(aria-hidden='true')
+                          span for Value
+                        .review-details
+                          p
+                            | by 
+                            a(href='#') Colorlib
+                            |  on 
+                            span 12 Sep 2018
+                .submit_a_review_area.mt-50
+                  h4 Submit A Review
+                  form(action='#' method='post')
+                    .row
+                      .col-12
+                        .form-group.d-flex.align-items-center
+                          span.mr-15 Your Ratings:
+                          .stars
+                            input#star-1.star-1(type='radio' name='star')
+                            label.star-1(for='star-1') 1
+                            input#star-2.star-2(type='radio' name='star')
+                            label.star-2(for='star-2') 2
+                            input#star-3.star-3(type='radio' name='star')
+                            label.star-3(for='star-3') 3
+                            input#star-4.star-4(type='radio' name='star')
+                            label.star-4(for='star-4') 4
+                            input#star-5.star-5(type='radio' name='star')
+                            label.star-5(for='star-5') 5
+                            span
+                      .col-12.col-md-6
+                        .form-group
+                          label(for='name') Nickname
+                          input#name.form-control(type='email' placeholder='Nazrul')
+                      .col-12.col-md-6
+                        .form-group
+                          label(for='options') Reason for your rating
+                          select#options.form-control
+                            option Quality
+                            option Value
+                            option Design
+                            option Price
+                            option Others
+                      .col-12
+                        .form-group
+                          label(for='comments') Comments
+                          textarea#comments.form-control(rows='5' data-max-length='150')
+                      .col-12
+                        button.btn.alazea-btn(type='submit') Submit Your Review
+  // ##### Single Product Details Area End #####
+  // ##### Related Product Area Start #####
+  //- .related-products-area
+    .container
+      .row
+        .col-12
+          // Section Heading
+          .section-heading.text-center
+            h2 Related Products
+      .row
+        // Single Product Area
+        .col-12.col-sm-6.col-lg-3
+          .single-product-area.mb-100
+            // Product Image
+            .product-img
+              a(href='shop-details.html')
+                img(src='img/bg-img/40.png' alt='')
+              // Product Tag
+              .product-tag
+                a(href='#') Hot
+              .product-meta.d-flex
+                a.wishlist-btn(href='#')
+                  i.icon_heart_alt
+                a.add-to-cart-btn(href='cart.html') Add to cart
+                a.compare-btn(href='#')
+                  i.arrow_left-right_alt
+            // Product Info
+            .product-info.mt-15.text-center
+              a(href='shop-details.html')
+                p Cactus Flower
+              h6 $10.99
+        // Single Product Area
+        .col-12.col-sm-6.col-lg-3
+          .single-product-area.mb-100
+            // Product Image
+            .product-img
+              a(href='shop-details.html')
+                img(src='img/bg-img/41.png' alt='')
+              .product-meta.d-flex
+                a.wishlist-btn(href='#')
+                  i.icon_heart_alt
+                a.add-to-cart-btn(href='cart.html') Add to cart
+                a.compare-btn(href='#')
+                  i.arrow_left-right_alt
+            // Product Info
+            .product-info.mt-15.text-center
+              a(href='shop-details.html')
+                p Cactus Flower
+              h6 $10.99
+        // Single Product Area
+        .col-12.col-sm-6.col-lg-3
+          .single-product-area.mb-100
+            // Product Image
+            .product-img
+              a(href='shop-details.html')
+                img(src='img/bg-img/42.png' alt='')
+              .product-meta.d-flex
+                a.wishlist-btn(href='#')
+                  i.icon_heart_alt
+                a.add-to-cart-btn(href='cart.html') Add to cart
+                a.compare-btn(href='#')
+                  i.arrow_left-right_alt
+            // Product Info
+            .product-info.mt-15.text-center
+              a(href='shop-details.html')
+                p Cactus Flower
+              h6 $10.99
+        // Single Product Area
+        .col-12.col-sm-6.col-lg-3
+          .single-product-area.mb-100
+            // Product Image
+            .product-img
+              a(href='shop-details.html')
+                img(src='img/bg-img/43.png' alt='')
+              // Product Tag
+              .product-tag.sale-tag
+                a(href='#') Hot
+              .product-meta.d-flex
+                a.wishlist-btn(href='#')
+                  i.icon_heart_alt
+                a.add-to-cart-btn(href='cart.html') Add to cart
+                a.compare-btn(href='#')
+                  i.arrow_left-right_alt
+            // Product Info
+            .product-info.mt-15.text-center
+              a(href='shop-details.html')
+                p Cactus Flower
+              h6 $10.99
+  // ##### Related Product Area End #####
