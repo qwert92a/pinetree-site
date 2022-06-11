@@ -9,7 +9,8 @@ const products = [
     grade: 40,
     height: 4.2,
     circumference: 2.1,
-    description: '조경수 40점',
+    description: `시설 용 조경수로 적절한 형태와 크기를 가진 소나무입니다.
+                  점수는 40 ~ 45점 사이이며 높이는 3.2m 정도입니다.`,
   },
   {
     name: '조경수',

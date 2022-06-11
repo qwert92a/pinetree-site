@@ -18,8 +18,8 @@ block content
                   | 우리 농장은 약 1000주의 다양한 소나무 조경수를 재배,
                   | 판매하고 있습니다.
                 .welcome-btn-group
-                  a.btn.alazea-btn.mr-30(href="#") 둘러보기
-                  a.btn.alazea-btn.active(href="#") 문의하기
+                  a.btn.alazea-btn.mr-30(href="/gallery") 둘러보기
+                  a.btn.alazea-btn.active(href="/contact") 문의하기
       // Single Hero Post
       .single-hero-post.bg-overlay
         // Post Image
@@ -34,8 +34,8 @@ block content
                   | 우리 농장은 약 1000주의 다양한 소나무 조경수를 재배,
                   | 판매하고 있습니다.
                 .welcome-btn-group
-                  a.btn.alazea-btn.mr-30(href="#") 둘러보기
-                  a.btn.alazea-btn.active(href="#") 문의하기
+                  a.btn.alazea-btn.mr-30(href="/gallery") 둘러보기
+                  a.btn.alazea-btn.active(href="/contact") 문의하기
       // Single Hero Post
       .single-hero-post.bg-overlay
         // Post Image
@@ -50,8 +50,8 @@ block content
                   | 우리 농장은 약 1000주의 다양한 소나무 조경수를 재배,
                   | 판매하고 있습니다.
                 .welcome-btn-group
-                  a.btn.alazea-btn.mr-30(href="#") 둘러보기
-                  a.btn.alazea-btn.active(href="#") 문의하기
+                  a.btn.alazea-btn.mr-30(href="/gallery") 둘러보기
+                  a.btn.alazea-btn.active(href="/contact") 문의하기
   // ##### Hero Area End #####
   // ##### Service Area Start #####
   section.our-services-area.bg-gray.section-padding-100-0
@@ -74,9 +74,9 @@ block content
                 img(src="img/core-img/s1.png", alt="")
               // Content
               .service-content
-                h5 프리미엄 조경수
+                h5 20년 이상의 정성으로 키워낸 조경수
                 p
-                  | 저희 농원에서는 50점 부터 100점까지 다양한 프리미엄 조경수를
+                  | 저희 농원에서는 20점 부터 40 ~ 45점까지 다양한 조경수를
                   | 보유하고 있습니다.
             // Single Service Area
             .single-service-area.d-flex.align-items-center.wow.fadeInUp(data-wow-delay="300ms")
@@ -85,8 +85,8 @@ block content
                 img(src="img/core-img/s2.png", alt="")
               // Content
               .service-content
-                h5 전원주택 용 조경수
-                p 다양한 형태의 주택 용 관상 조경수를 보유하고 있습니다.
+                h5 다용도 조경수
+                p 시설 용, 주택 용 등 다양한 용도에 맞는 다양한 조경수를 보유하고 있습니다.
             // Single Service Area
             .single-service-area.d-flex.align-items-center.wow.fadeInUp(data-wow-delay="500ms")
               // Icon
@@ -105,7 +105,7 @@ block content
 
   // ##### Service Area End #####
   // ##### About Area Start #####
-  section.about-us-area.section-padding-100-0
+  //- section.about-us-area.section-padding-100-0
     .container
       .row.justify-content-between
         .col-12.col-lg-5
@@ -199,88 +199,104 @@ block content
               | 조경수에 대한 자세한 정보는 판매 상품 페이지에 안내되어
               | 있습니다.
     .container-fluid
-      .row
-        .col-12
-          .alazea-portfolio-filter
-            .portfolio-filter
-              button.btn.active(data-filter="*") 전체
-              button.btn(data-filter=".agency") 기관용
-              button.btn(data-filter=".housing") 주택용
-              button.btn(data-filter=".baby") 다복솔
+      //- .row
+      //-   .col-12
+      //-     .alazea-portfolio-filter
+      //-       .portfolio-filter
+      //-         button.btn.active(data-filter="*") 전체
+      //-         button.btn(data-filter=".agency") 기관용
+      //-         button.btn(data-filter=".housing") 주택용
+      //-         button.btn(data-filter=".baby") 다복솔
       .row.alazea-portfolio
-        // Single Portfolio Area
-        div(class="col-12 col-sm-6 col-lg-3 single_portfolio_item design home-design wow fadeInUp", data-wow-delay="100ms")
-          // Portfolio Thumbnail
-          .portfolio-thumbnail.bg-img(style="background-image: url(img/bg-img/16.jpg)")
-          // Portfolio Hover Text
-          .portfolio-hover-overlay
-            a.portfolio-img.d-flex.align-items-center.justify-content-center(href="img/bg-img/16.jpg", title="Portfolio 1")
-              .port-hover-text
-                h3 Minimal Flower Store
-                h5 Office Plants
-        // Single Portfolio Area
-        div(class="col-12 col-sm-6 col-lg-3 single_portfolio_item garden wow fadeInUp", data-wow-delay="200ms")
-          // Portfolio Thumbnail
-          .portfolio-thumbnail.bg-img(style="background-image: url(img/bg-img/17.jpg)")
-          // Portfolio Hover Text
-          .portfolio-hover-overlay
-            a.portfolio-img.d-flex.align-items-center.justify-content-center(href="img/bg-img/17.jpg", title="Portfolio 2")
-              .port-hover-text
-                h3 Minimal Flower Store
-                h5 Office Plants
-        // Single Portfolio Area
-        div(class="col-12 col-sm-6 col-lg-3 single_portfolio_item garden design wow fadeInUp", data-wow-delay="300ms")
-          // Portfolio Thumbnail
-          .portfolio-thumbnail.bg-img(style="background-image: url(img/bg-img/18.jpg)")
-          // Portfolio Hover Text
-          .portfolio-hover-overlay
-            a.portfolio-img.d-flex.align-items-center.justify-content-center(href="img/bg-img/18.jpg", title="Portfolio 3")
-              .port-hover-text
-                h3 Minimal Flower Store
-                h5 Office Plants
-        // Single Portfolio Area
-        div(class="col-12 col-sm-6 col-lg-3 single_portfolio_item garden office-design wow fadeInUp", data-wow-delay="400ms")
-          // Portfolio Thumbnail
-          .portfolio-thumbnail.bg-img(style="background-image: url(img/bg-img/19.jpg)")
-          // Portfolio Hover Text
-          .portfolio-hover-overlay
-            a.portfolio-img.d-flex.align-items-center.justify-content-center(href="img/bg-img/19.jpg", title="Portfolio 4")
-              .port-hover-text
-                h3 Minimal Flower Store
-                h5 Office Plants
-        // Single Portfolio Area
-        div(class="col-12 col-sm-6 col-lg-3 single_portfolio_item design office-design wow fadeInUp", data-wow-delay="100ms")
-          // Portfolio Thumbnail
-          .portfolio-thumbnail.bg-img(style="background-image: url(img/bg-img/20.jpg)")
-          // Portfolio Hover Text
-          .portfolio-hover-overlay
-            a.portfolio-img.d-flex.align-items-center.justify-content-center(href="img/bg-img/20.jpg", title="Portfolio 5")
-              .port-hover-text
-                h3 Minimal Flower Store
-                h5 Office Plants
-        // Single Portfolio Area
-        div(class="col-12 col-sm-6 col-lg-3 single_portfolio_item garden wow fadeInUp", data-wow-delay="200ms")
-          // Portfolio Thumbnail
-          .portfolio-thumbnail.bg-img(style="background-image: url(img/bg-img/21.jpg)")
-          // Portfolio Hover Text
-          .portfolio-hover-overlay
-            a.portfolio-img.d-flex.align-items-center.justify-content-center(href="img/bg-img/21.jpg", title="Portfolio 6")
-              .port-hover-text
-                h3 Minimal Flower Store
-                h5 Office Plants
-        // Single Portfolio Area
-        div(class="col-12 col-lg-6 single_portfolio_item home-design wow fadeInUp", data-wow-delay="300ms")
-          // Portfolio Thumbnail
-          .portfolio-thumbnail.bg-img(style="background-image: url(img/bg-img/22.jpg)")
-          // Portfolio Hover Text
-          .portfolio-hover-overlay
-            a.portfolio-img.d-flex.align-items-center.justify-content-center(href="img/bg-img/22.jpg", title="Portfolio 7")
-              .port-hover-text
-                h3 Minimal Flower Store
-                h5 Office Plants
+        each image, index in gallery
+          if index <= 7
+            // Single Portfolio Area
+            div(class="col-12 col-sm-6 col-lg-3 single_portfolio_item design home-design wow fadeInUp", data-wow-delay="100ms")
+              // Portfolio Thumbnail
+              .portfolio-thumbnail.bg-img(style="background-image: url("+image+")")
+              // Portfolio Hover Text
+              .portfolio-hover-overlay
+                a.portfolio-img.d-flex.align-items-center.justify-content-center(href=image, title=(index+1))
+                  .port-hover-text
+                    //- h3 Minimal Flower Store
+                    h5 형제농원
+      .row(style='margin-top: 3em; margin-bottom: 3em;')
+        .col-12.text-center
+          a.btn.alazea-btn(href="/gallery?page=1") 갤러리 둘러보기
+
+        //- // Single Portfolio Area
+        //- div(class="col-12 col-sm-6 col-lg-3 single_portfolio_item design home-design wow fadeInUp", data-wow-delay="100ms")
+        //-   // Portfolio Thumbnail
+        //-   .portfolio-thumbnail.bg-img(style="background-image: url(img/bg-img/16.jpg)")
+        //-   // Portfolio Hover Text
+        //-   .portfolio-hover-overlay
+        //-     a.portfolio-img.d-flex.align-items-center.justify-content-center(href="img/bg-img/16.jpg", title="Portfolio 1")
+        //-       .port-hover-text
+        //-         h3 Minimal Flower Store
+        //-         h5 Office Plants
+        //- // Single Portfolio Area
+        //- div(class="col-12 col-sm-6 col-lg-3 single_portfolio_item garden wow fadeInUp", data-wow-delay="200ms")
+        //-   // Portfolio Thumbnail
+        //-   .portfolio-thumbnail.bg-img(style="background-image: url(img/bg-img/17.jpg)")
+        //-   // Portfolio Hover Text
+        //-   .portfolio-hover-overlay
+        //-     a.portfolio-img.d-flex.align-items-center.justify-content-center(href="img/bg-img/17.jpg", title="Portfolio 2")
+        //-       .port-hover-text
+        //-         h3 Minimal Flower Store
+        //-         h5 Office Plants
+        //- // Single Portfolio Area
+        //- div(class="col-12 col-sm-6 col-lg-3 single_portfolio_item garden design wow fadeInUp", data-wow-delay="300ms")
+        //-   // Portfolio Thumbnail
+        //-   .portfolio-thumbnail.bg-img(style="background-image: url(img/bg-img/18.jpg)")
+        //-   // Portfolio Hover Text
+        //-   .portfolio-hover-overlay
+        //-     a.portfolio-img.d-flex.align-items-center.justify-content-center(href="img/bg-img/18.jpg", title="Portfolio 3")
+        //-       .port-hover-text
+        //-         h3 Minimal Flower Store
+        //-         h5 Office Plants
+        //- // Single Portfolio Area
+        //- div(class="col-12 col-sm-6 col-lg-3 single_portfolio_item garden office-design wow fadeInUp", data-wow-delay="400ms")
+        //-   // Portfolio Thumbnail
+        //-   .portfolio-thumbnail.bg-img(style="background-image: url(img/bg-img/19.jpg)")
+        //-   // Portfolio Hover Text
+        //-   .portfolio-hover-overlay
+        //-     a.portfolio-img.d-flex.align-items-center.justify-content-center(href="img/bg-img/19.jpg", title="Portfolio 4")
+        //-       .port-hover-text
+        //-         h3 Minimal Flower Store
+        //-         h5 Office Plants
+        //- // Single Portfolio Area
+        //- div(class="col-12 col-sm-6 col-lg-3 single_portfolio_item design office-design wow fadeInUp", data-wow-delay="100ms")
+        //-   // Portfolio Thumbnail
+        //-   .portfolio-thumbnail.bg-img(style="background-image: url(img/bg-img/20.jpg)")
+        //-   // Portfolio Hover Text
+        //-   .portfolio-hover-overlay
+        //-     a.portfolio-img.d-flex.align-items-center.justify-content-center(href="img/bg-img/20.jpg", title="Portfolio 5")
+        //-       .port-hover-text
+        //-         h3 Minimal Flower Store
+        //-         h5 Office Plants
+        //- // Single Portfolio Area
+        //- div(class="col-12 col-sm-6 col-lg-3 single_portfolio_item garden wow fadeInUp", data-wow-delay="200ms")
+        //-   // Portfolio Thumbnail
+        //-   .portfolio-thumbnail.bg-img(style="background-image: url(img/bg-img/21.jpg)")
+        //-   // Portfolio Hover Text
+        //-   .portfolio-hover-overlay
+        //-     a.portfolio-img.d-flex.align-items-center.justify-content-center(href="img/bg-img/21.jpg", title="Portfolio 6")
+        //-       .port-hover-text
+        //-         h3 Minimal Flower Store
+        //-         h5 Office Plants
+        //- // Single Portfolio Area
+        //- div(class="col-12 col-lg-6 single_portfolio_item home-design wow fadeInUp", data-wow-delay="300ms")
+        //-   // Portfolio Thumbnail
+        //-   .portfolio-thumbnail.bg-img(style="background-image: url(img/bg-img/22.jpg)")
+        //-   // Portfolio Hover Text
+        //-   .portfolio-hover-overlay
+        //-     a.portfolio-img.d-flex.align-items-center.justify-content-center(href="img/bg-img/22.jpg", title="Portfolio 7")
+        //-       .port-hover-text
+        //-         h3 Minimal Flower Store
+        //-         h5 Office Plants
   // ##### Portfolio Area End #####
   // ##### Testimonial Area Start #####
-  section.testimonial-area.section-padding-100
+  section.testimonial-area.bg-gray.section-padding-100
     .container
       .row
         .col-12
@@ -290,67 +306,73 @@ block content
               .row.align-items-center
                 .col-12.col-md-6
                   .testimonial-thumb
-                    img(src="img/bg-img/13.jpg", alt="")
+                    img(src="img/profile/dadnson.jpg", alt="")
                 .col-12.col-md-6
                   .testimonial-content
                     // Section Heading
                     .section-heading
-                      h2 TESTIMONIAL
-                      p Some kind words from clients about Alazea
+                      h2 형제농원에 오신것을 환영합니다.
+                      //- p Some kind words from clients about Alazea
                     p
-                      | “Alazea is a pleasure to work with. Their ideas are
-                      | creative, they came up with imaginative solutions to
-                      | some tricky issues, their landscaping and planting
-                      | contacts are equally excellent we have a beautiful but
-                      | also manageable garden as a result. Thank you!”
+                      | “게임이 최고다”
+                      //- | “우리 농장은 20년 이상 다양한 크기와 모양을 가진 소나무들을 키우고 있습니다”
                     .testimonial-author-info
-                      h6 Mr. Nick Jonas
-                      p CEO of NAVATECH
+                      h6 심광선
+                      p 우리아빠
             // Single Testimonial Slide
             .single-testimonial-slide
               .row.align-items-center
                 .col-12.col-md-6
                   .testimonial-thumb
-                    img(src="img/bg-img/14.jpg", alt="")
+                    img(src="img/profile/momnson.jpg", alt="")
                 .col-12.col-md-6
                   .testimonial-content
                     // Section Heading
                     .section-heading
-                      h2 TESTIMONIAL
-                      p Some kind words from clients about Alazea
+                      h2 형제농원에 오신것을 환영합니다.
+                      //- p Some kind words from clients about Alazea
                     p
-                      | “Alazea is a pleasure to work with. Their ideas are
-                      | creative, they came up with imaginative solutions to
-                      | some tricky issues, their landscaping and planting
-                      | contacts are equally excellent we have a beautiful but
-                      | also manageable garden as a result. Thank you!”
+                      | “돈이 최고다”
                     .testimonial-author-info
-                      h6 Mr. Nazrul Islam
-                      p CEO of NAVATECH
+                      h6 유성미
+                      p 우리엄마
             // Single Testimonial Slide
             .single-testimonial-slide
               .row.align-items-center
                 .col-12.col-md-6
                   .testimonial-thumb
-                    img(src="img/bg-img/15.jpg", alt="")
+                    img(src="img/profile/bronsis.jpg", alt="")
                 .col-12.col-md-6
                   .testimonial-content
                     // Section Heading
                     .section-heading
-                      h2 TESTIMONIAL
-                      p Some kind words from clients about Alazea
+                      h2 형제농원에 오신것을 환영합니다.
+                      //- p Some kind words from clients about Alazea
                     p
-                      | “Alazea is a pleasure to work with. Their ideas are
-                      | creative, they came up with imaginative solutions to
-                      | some tricky issues, their landscaping and planting
-                      | contacts are equally excellent we have a beautiful but
-                      | also manageable garden as a result. Thank you!”
+                      | “누워있는게 최고다”
                     .testimonial-author-info
-                      h6 Mr. Jonas Nick
-                      p CEO of NAVATECH
+                      h6 심지은
+                      p 우리집에 서식하는 야생동물
+            // Single Testimonial Slide
+            .single-testimonial-slide
+              .row.align-items-center
+                .col-12.col-md-6
+                  .testimonial-thumb
+                    img(src="img/profile/son.jpg", alt="")
+                .col-12.col-md-6
+                  .testimonial-content
+                    // Section Heading
+                    .section-heading
+                      h2 형제농원에 오신것을 환영합니다.
+                      //- p Some kind words from clients about Alazea
+                    p
+                      | “세상 다 부질없다”
+                    .testimonial-author-info
+                      h6 심규철
+                      p 얼마전에 차임
   // ##### Testimonial Area End #####
   // ##### Product Area Start #####
-  section.new-arrivals-products-area.bg-gray.section-padding-100
+  //- section.new-arrivals-products-area.bg-gray.section-padding-100
     .container
       .row
         .col-12
@@ -441,7 +463,7 @@ block content
           a.btn.alazea-btn(href="#") View All
   // ##### Product Area End #####
   // ##### Blog Area Start #####
-  section.alazea-blog-area.section-padding-100-0
+  //- section.alazea-blog-area.section-padding-100-0
     .container
       .row
         .col-12
@@ -521,7 +543,7 @@ block content
                 | nec lacus sit amet. Aenean interdus mid vitae.
   // ##### Blog Area End #####
   // ##### Subscribe Area Start #####
-  section.subscribe-newsletter-area(style="background-image: url(img/bg-img/subscribe.png)")
+  //- section.subscribe-newsletter-area(style="background-image: url(img/bg-img/subscribe.png)")
     .container
       .row.align-items-center.justify-content-between
         .col-12.col-lg-5
@@ -546,29 +568,41 @@ block content
         .col-12.col-lg-5
           // Section Heading
           .section-heading
-            h2 GET IN TOUCH
-            p Send us a message, we will call back later
+            h2(style='margin-bottom: 0.7em;') 문의 하기
+            p 문의 내용을 작성하여 보내주시면, 적어주신 이메일로 답변을 드립니다. &#40;평일 기준 1~2 일 이내&#41;
           // Contact Form Area
           .contact-form-area.mb-100
-            form(action="#", method="post")
+            form(action='#' method='#')
               .row
-                .col-12.col-sm-6
+                .col-12.col-md-5(style='display: none;')
                   .form-group
-                    input#contact-name.form-control(type="text", placeholder="Your Name")
-                .col-12.col-sm-6
+                    input#contact-product.form-control(name='product' type='text' value='선택안함')
+                .col-12.col-md-5
                   .form-group
-                    input#contact-email.form-control(type="email", placeholder="Your Email")
+                    input#contact-name.form-control(name='name' type='text' placeholder='닉네임')
+                .col-12.col-md-8 
+                  .form-group
+                    input#contact-phone.form-control(name='phone' type='text' placeholder='연락처')
+                .col-12.col-md-8 
+                  .form-group
+                    input#contact-email.form-control(name='email' type='text' placeholder='이메일')
                 .col-12
                   .form-group
-                    input#contact-subject.form-control(type="text", placeholder="Subject")
+                    input#contact-subject.form-control(name='subject' type='text' placeholder='문의 제목')
                 .col-12
                   .form-group
-                    textarea#message.form-control(name="message", cols="30", rows="10", placeholder="Message")
+                    textarea#contact-message.form-control(name='message' cols='30' rows='10' placeholder='문의 내용' style='height: 200px;')
                 .col-12
-                  button.btn.alazea-btn.mt-15(type="submit")
-                    | Send Message
+                  button.btn.alazea-btn.mt-15 문의 보내기
         .col-12.col-lg-6
           // Google Maps
           .map-area.mb-100
-            iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5470.347705710245!2d126.64058715729146!3d35.388188388145174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35719dd82a294975%3A0xf2a663c2029807c3!2z7Y-s64-Z66eI7J2E7ZqM6rSA!5e0!3m2!1sko!2skr!4v1654207230885!5m2!1sko!2skr", width="600", height="450", style="border: 0", allowfullscreen, loading="lazy", referrerpolicy="no-referrer-when-downgrade")
+            iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5470.347705710245!2d126.64058715729146!3d35.388188388145174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35719dd82a294975%3A0xf2a663c2029807c3!2z7Y-s64-Z66eI7J2E7ZqM6rSA!5e0!3m2!1sko!2skr!4v1654207230885!5m2!1sko!2skr", width="600", height="450", style="border: 0", allowfullscreen, loading="lazy", referrerpolicy="no-referrer-when-downgrade' allowfullscreen='')
   // ##### Contact Area End #####
+
+  script(src="https://unpkg.com/axios/dist/axios.min.js")
+  // import contact.js
+  script(src="/js/contact.js")
+  script.
+    const $form = document.querySelector('.contact-form-area .btn.alazea-btn');
+    $form.addEventListener('click', onSubmit);

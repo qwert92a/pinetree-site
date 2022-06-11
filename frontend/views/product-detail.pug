@@ -121,7 +121,7 @@ block content
                   //-   input#qty.qty-text(type='number' step='1' min='1' max='12' name='quantity' value='1')
                   //-   span.qty-plus(onclick="var effect = document.getElementById('qty'); var qty = effect.value; if( !isNaN( qty )) effect.value++;return false;")
                   //-     i.fa.fa-plus(aria-hidden='true')
-                  button.btn.alazea-btn.ml-15(type='submit' name='addtocart' value='5') 상품 문의하기
+                  button.btn.alazea-btn.ml-15(type='button' name='addtocart' value='5' data-toggle='modal' data-target='#contactModal') 상품 문의하기
                 
               //- .products--meta
               //-   p
@@ -152,7 +152,7 @@ block content
         .col-12
           .product_details_tab.clearfix
             // Tabs
-            ul#product-details-tab.nav.nav-tabs(role='tablist')
+            ul#product-details-tab.nav.nav-tabs(role='tablist' style='margin-bottom: 3em;')
               li.nav-item
                 a.nav-link.active(href='#description' data-toggle='tab' role='tab') 상품 설명
               li.nav-item
@@ -365,3 +365,49 @@ block content
                 p Cactus Flower
               h6 $10.99
   // ##### Related Product Area End #####
+
+  // Modal
+  #contactModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby="exampleModalLabel" aria-hidden='true')
+    .modal-dialog.modal-lg(role='document')
+      .modal-content
+        .modal-header.text-center(style='background-color: #70c745; border-color: #70c745;')
+          h5#exampleModalLabel.modal-title.w-100.text-white(style='text-align: center; background-color: #70c745; border-color: #70c745;') 상품 문의하기
+          button.close(type='button' data-dismiss='modal' aria-label='Close')
+            span.text-white(aria-hidden='true') &times;
+        .modal-body
+          form
+            .form-group.row
+              label.col-sm-2.col-form-label(for='contact-product') 상품번호:
+              .col-sm-10
+                input#contact-product.form-control-plaintext(type='text' readonly='' value='3adsf34')
+            .form-group.row
+              label.col-sm-2.col-form-label(for='contact-name') 닉네임:
+              .col-sm-4
+                input#contact-name.form-control(type='text')
+            .form-group.row
+              label.col-sm-2.col-form-label(for='contact-phone') 연락처:
+              .col-sm-4
+                input#contact-phone.form-control(type='text')
+            .form-group.row
+              label.col-sm-2.col-form-label(for='contact-email') 이메일:
+              .col-sm-6
+                input#contact-email.form-control(type='email')
+            .form-group.row
+              label.col-sm-2.col-form-label(for='contact-subject') 문의 제목:
+              .col-sm-6
+                input#contact-subject.form-control(type='text')
+            .form-group.row
+              label.col-sm-2.col-form-label(for='contact-message') 문의 내용:
+              .col-sm-10
+                textarea#contact-message.form-control(cols='30' rows='6')
+
+        .modal-footer(style='border-color: #70c745;')
+          button.btn.btn-secondary(type='button' data-dismiss='modal') 취소
+          button.btn.btn-primary(type='button' data-dismiss='modal') 문의 보내기
+
+  script(src="https://unpkg.com/axios/dist/axios.min.js")
+  // import contact.js
+  script(src="/js/contact.js")
+  script.
+    const $btn = document.querySelector('#contactModal .modal-footer .btn-primary');
+    $btn.addEventListener('click', onSubmit);

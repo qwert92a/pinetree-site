@@ -37,124 +37,167 @@ block content
               button.btn(data-filter='.home-design') 20-30점
               //- button.btn(data-filter='.office-design') Office Design
       .row.alazea-portfolio
-        // Single Portfolio Area
-        .col-12.col-sm-6.col-lg-3.single_portfolio_item.design.home-design
-          // Portfolio Thumbnail
-          .portfolio-thumbnail.bg-img(style='background-image: url(img/bg-img/16.jpg);')
-          // Portfolio Hover Text
-          .portfolio-hover-overlay
-            a.portfolio-img.d-flex.align-items-center.justify-content-center(href='img/bg-img/16.jpg' title='Portfolio 1')
-              .port-hover-text
-                h3 Minimal Flower Store
-                h5 Office Plants
-        // Single Portfolio Area
-        .col-12.col-sm-6.col-lg-6.single_portfolio_item.garden
-          // Portfolio Thumbnail
-          .portfolio-thumbnail.bg-img(style='background-image: url(img/bg-img/17.jpg);')
-          // Portfolio Hover Text
-          .portfolio-hover-overlay
-            a.portfolio-img.d-flex.align-items-center.justify-content-center(href='img/bg-img/17.jpg' title='Portfolio 2')
-              .port-hover-text
-                h3 Minimal Flower Store
-                h5 Office Plants
-        // Single Portfolio Area
-        .col-12.col-sm-6.col-lg-3.single_portfolio_item.garden.office-design
-          // Portfolio Thumbnail
-          .portfolio-thumbnail.bg-img(style='background-image: url(img/bg-img/19.jpg);')
-          // Portfolio Hover Text
-          .portfolio-hover-overlay
-            a.portfolio-img.d-flex.align-items-center.justify-content-center(href='img/bg-img/19.jpg' title='Portfolio 4')
-              .port-hover-text
-                h3 Minimal Flower Store
-                h5 Office Plants
-        // Single Portfolio Area
-        .col-12.col-sm-6.col-lg-3.single_portfolio_item.design.office-design
-          // Portfolio Thumbnail
-          .portfolio-thumbnail.bg-img(style='background-image: url(img/bg-img/20.jpg);')
-          // Portfolio Hover Text
-          .portfolio-hover-overlay
-            a.portfolio-img.d-flex.align-items-center.justify-content-center(href='img/bg-img/20.jpg' title='Portfolio 5')
-              .port-hover-text
-                h3 Minimal Flower Store
-                h5 Office Plants
-        // Single Portfolio Area
-        .col-12.col-sm-6.col-lg-3.single_portfolio_item.garden
-          // Portfolio Thumbnail
-          .portfolio-thumbnail.bg-img(style='background-image: url(img/bg-img/21.jpg);')
-          // Portfolio Hover Text
-          .portfolio-hover-overlay
-            a.portfolio-img.d-flex.align-items-center.justify-content-center(href='img/bg-img/21.jpg' title='Portfolio 6')
-              .port-hover-text
-                h3 Minimal Flower Store
-                h5 Office Plants
-        // Single Portfolio Area
-        .col-12.col-sm-6.col-lg-6.single_portfolio_item.home-design
-          // Portfolio Thumbnail
-          .portfolio-thumbnail.bg-img(style='background-image: url(img/bg-img/22.jpg);')
-          // Portfolio Hover Text
-          .portfolio-hover-overlay
-            a.portfolio-img.d-flex.align-items-center.justify-content-center(href='img/bg-img/22.jpg' title='Portfolio 7')
-              .port-hover-text
-                h3 Minimal Flower Store
-                h5 Office Plants
-        // Single Portfolio Area
-        .col-12.col-sm-6.col-lg-6.single_portfolio_item.design.home-design
-          // Portfolio Thumbnail
-          .portfolio-thumbnail.bg-img(style='background-image: url(img/bg-img/16.jpg);')
-          // Portfolio Hover Text
-          .portfolio-hover-overlay
-            a.portfolio-img.d-flex.align-items-center.justify-content-center(href='img/bg-img/16.jpg' title='Portfolio 1')
-              .port-hover-text
-                h3 Minimal Flower Store
-                h5 Office Plants
-        // Single Portfolio Area
-        .col-12.col-sm-6.col-lg-3.single_portfolio_item.garden
-          // Portfolio Thumbnail
-          .portfolio-thumbnail.bg-img(style='background-image: url(img/bg-img/17.jpg);')
-          // Portfolio Hover Text
-          .portfolio-hover-overlay
-            a.portfolio-img.d-flex.align-items-center.justify-content-center(href='img/bg-img/17.jpg' title='Portfolio 2')
-              .port-hover-text
-                h3 Minimal Flower Store
-                h5 Office Plants
-        // Single Portfolio Area
-        .col-12.col-sm-6.col-lg-3.single_portfolio_item.garden.office-design
-          // Portfolio Thumbnail
-          .portfolio-thumbnail.bg-img(style='background-image: url(img/bg-img/19.jpg);')
-          // Portfolio Hover Text
-          .portfolio-hover-overlay
-            a.portfolio-img.d-flex.align-items-center.justify-content-center(href='img/bg-img/19.jpg' title='Portfolio 4')
-              .port-hover-text
-                h3 Minimal Flower Store
-                h5 Office Plants
-        // Single Portfolio Area
-        .col-12.col-sm-6.col-lg-3.single_portfolio_item.design.office-design
-          // Portfolio Thumbnail
-          .portfolio-thumbnail.bg-img(style='background-image: url(img/bg-img/20.jpg);')
-          // Portfolio Hover Text
-          .portfolio-hover-overlay
-            a.portfolio-img.d-flex.align-items-center.justify-content-center(href='img/bg-img/20.jpg' title='Portfolio 5')
-              .port-hover-text
-                h3 Minimal Flower Store
-                h5 Office Plants
-        // Single Portfolio Area
-        .col-12.col-sm-6.col-lg-3.single_portfolio_item.garden
-          // Portfolio Thumbnail
-          .portfolio-thumbnail.bg-img(style='background-image: url(img/bg-img/21.jpg);')
-          // Portfolio Hover Text
-          .portfolio-hover-overlay
-            a.portfolio-img.d-flex.align-items-center.justify-content-center(href='img/bg-img/21.jpg' title='Portfolio 6')
-              .port-hover-text
-                h3 Minimal Flower Store
-                h5 Office Plants
-        // Single Portfolio Area
-        .col-12.col-sm-6.col-lg-6.single_portfolio_item.home-design
-          // Portfolio Thumbnail
-          .portfolio-thumbnail.bg-img(style='background-image: url(img/bg-img/22.jpg);')
-          // Portfolio Hover Text
-          .portfolio-hover-overlay
-            a.portfolio-img.d-flex.align-items-center.justify-content-center(href='img/bg-img/22.jpg' title='Portfolio 7')
-              .port-hover-text
-                h3 Minimal Flower Store
-                h5 Office Plants
+        each image, index in gallery
+          // Single Portfolio Area
+          div(class="col-12 col-sm-6 col-lg-3 single_portfolio_item design home-design wow fadeInUp", data-wow-delay="100ms")
+            // Portfolio Thumbnail
+            .portfolio-thumbnail.bg-img(style="background-image: url("+image+")")
+            // Portfolio Hover Text
+            .portfolio-hover-overlay
+              a.portfolio-img.d-flex.align-items-center.justify-content-center(href=image, title=(index+1))
+                .port-hover-text
+                  //- h3 Minimal Flower Store
+                  h5 형제농원
+      .row(style='margin-top: 5em; justify-content: center;')
+        // Pagination
+        nav(aria-label='Page navigation')
+          ul.pagination
+            if parseInt(page)-1 === 0
+                  li.page-item
+                    a.page-link(href='/gallery?page='+numPages)
+                      i.fa.fa-angle-left
+            else
+              li.page-item
+                a.page-link(href='/gallery?page='+(parseInt(page)-1))
+                  i.fa.fa-angle-left
+            - let n = 1;
+            while n <= numPages
+              if n === parseInt(page)
+                li.page-item
+                  a.page-link.active(href='/gallery?page='+n)= n++
+              else
+                li.page-item
+                  a.page-link(href='/gallery?page='+n)= n++
+            //- li.page-item
+            //-   a.page-link(href='#') 1
+            //- li.page-item
+            //-   a.page-link(href='#') 2
+            if parseInt(page) === parseInt(numPages)
+                  li.page-item
+                    a.page-link(href='/gallery?page=1')
+                      i.fa.fa-angle-right
+            else
+              li.page-item
+                a.page-link(href='/gallery?page='+(parseInt(page)+1))
+                  i.fa.fa-angle-right
+        //- // Single Portfolio Area
+        //- .col-12.col-sm-6.col-lg-3.single_portfolio_item.design.home-design
+        //-   // Portfolio Thumbnail
+        //-   .portfolio-thumbnail.bg-img(style='background-image: url(img/bg-img/16.jpg);')
+        //-   // Portfolio Hover Text
+        //-   .portfolio-hover-overlay
+        //-     a.portfolio-img.d-flex.align-items-center.justify-content-center(href='img/bg-img/16.jpg' title='Portfolio 1')
+        //-       .port-hover-text
+        //-         h3 Minimal Flower Store
+        //-         h5 Office Plants
+        //- // Single Portfolio Area
+        //- .col-12.col-sm-6.col-lg-6.single_portfolio_item.garden
+        //-   // Portfolio Thumbnail
+        //-   .portfolio-thumbnail.bg-img(style='background-image: url(img/bg-img/17.jpg);')
+        //-   // Portfolio Hover Text
+        //-   .portfolio-hover-overlay
+        //-     a.portfolio-img.d-flex.align-items-center.justify-content-center(href='img/bg-img/17.jpg' title='Portfolio 2')
+        //-       .port-hover-text
+        //-         h3 Minimal Flower Store
+        //-         h5 Office Plants
+        //- // Single Portfolio Area
+        //- .col-12.col-sm-6.col-lg-3.single_portfolio_item.garden.office-design
+        //-   // Portfolio Thumbnail
+        //-   .portfolio-thumbnail.bg-img(style='background-image: url(img/bg-img/19.jpg);')
+        //-   // Portfolio Hover Text
+        //-   .portfolio-hover-overlay
+        //-     a.portfolio-img.d-flex.align-items-center.justify-content-center(href='img/bg-img/19.jpg' title='Portfolio 4')
+        //-       .port-hover-text
+        //-         h3 Minimal Flower Store
+        //-         h5 Office Plants
+        //- // Single Portfolio Area
+        //- .col-12.col-sm-6.col-lg-3.single_portfolio_item.design.office-design
+        //-   // Portfolio Thumbnail
+        //-   .portfolio-thumbnail.bg-img(style='background-image: url(img/bg-img/20.jpg);')
+        //-   // Portfolio Hover Text
+        //-   .portfolio-hover-overlay
+        //-     a.portfolio-img.d-flex.align-items-center.justify-content-center(href='img/bg-img/20.jpg' title='Portfolio 5')
+        //-       .port-hover-text
+        //-         h3 Minimal Flower Store
+        //-         h5 Office Plants
+        //- // Single Portfolio Area
+        //- .col-12.col-sm-6.col-lg-3.single_portfolio_item.garden
+        //-   // Portfolio Thumbnail
+        //-   .portfolio-thumbnail.bg-img(style='background-image: url(img/bg-img/21.jpg);')
+        //-   // Portfolio Hover Text
+        //-   .portfolio-hover-overlay
+        //-     a.portfolio-img.d-flex.align-items-center.justify-content-center(href='img/bg-img/21.jpg' title='Portfolio 6')
+        //-       .port-hover-text
+        //-         h3 Minimal Flower Store
+        //-         h5 Office Plants
+        //- // Single Portfolio Area
+        //- .col-12.col-sm-6.col-lg-6.single_portfolio_item.home-design
+        //-   // Portfolio Thumbnail
+        //-   .portfolio-thumbnail.bg-img(style='background-image: url(img/bg-img/22.jpg);')
+        //-   // Portfolio Hover Text
+        //-   .portfolio-hover-overlay
+        //-     a.portfolio-img.d-flex.align-items-center.justify-content-center(href='img/bg-img/22.jpg' title='Portfolio 7')
+        //-       .port-hover-text
+        //-         h3 Minimal Flower Store
+        //-         h5 Office Plants
+        //- // Single Portfolio Area
+        //- .col-12.col-sm-6.col-lg-6.single_portfolio_item.design.home-design
+        //-   // Portfolio Thumbnail
+        //-   .portfolio-thumbnail.bg-img(style='background-image: url(img/bg-img/16.jpg);')
+        //-   // Portfolio Hover Text
+        //-   .portfolio-hover-overlay
+        //-     a.portfolio-img.d-flex.align-items-center.justify-content-center(href='img/bg-img/16.jpg' title='Portfolio 1')
+        //-       .port-hover-text
+        //-         h3 Minimal Flower Store
+        //-         h5 Office Plants
+        //- // Single Portfolio Area
+        //- .col-12.col-sm-6.col-lg-3.single_portfolio_item.garden
+        //-   // Portfolio Thumbnail
+        //-   .portfolio-thumbnail.bg-img(style='background-image: url(img/bg-img/17.jpg);')
+        //-   // Portfolio Hover Text
+        //-   .portfolio-hover-overlay
+        //-     a.portfolio-img.d-flex.align-items-center.justify-content-center(href='img/bg-img/17.jpg' title='Portfolio 2')
+        //-       .port-hover-text
+        //-         h3 Minimal Flower Store
+        //-         h5 Office Plants
+        //- // Single Portfolio Area
+        //- .col-12.col-sm-6.col-lg-3.single_portfolio_item.garden.office-design
+        //-   // Portfolio Thumbnail
+        //-   .portfolio-thumbnail.bg-img(style='background-image: url(img/bg-img/19.jpg);')
+        //-   // Portfolio Hover Text
+        //-   .portfolio-hover-overlay
+        //-     a.portfolio-img.d-flex.align-items-center.justify-content-center(href='img/bg-img/19.jpg' title='Portfolio 4')
+        //-       .port-hover-text
+        //-         h3 Minimal Flower Store
+        //-         h5 Office Plants
+        //- // Single Portfolio Area
+        //- .col-12.col-sm-6.col-lg-3.single_portfolio_item.design.office-design
+        //-   // Portfolio Thumbnail
+        //-   .portfolio-thumbnail.bg-img(style='background-image: url(img/bg-img/20.jpg);')
+        //-   // Portfolio Hover Text
+        //-   .portfolio-hover-overlay
+        //-     a.portfolio-img.d-flex.align-items-center.justify-content-center(href='img/bg-img/20.jpg' title='Portfolio 5')
+        //-       .port-hover-text
+        //-         h3 Minimal Flower Store
+        //-         h5 Office Plants
+        //- // Single Portfolio Area
+        //- .col-12.col-sm-6.col-lg-3.single_portfolio_item.garden
+        //-   // Portfolio Thumbnail
+        //-   .portfolio-thumbnail.bg-img(style='background-image: url(img/bg-img/21.jpg);')
+        //-   // Portfolio Hover Text
+        //-   .portfolio-hover-overlay
+        //-     a.portfolio-img.d-flex.align-items-center.justify-content-center(href='img/bg-img/21.jpg' title='Portfolio 6')
+        //-       .port-hover-text
+        //-         h3 Minimal Flower Store
+        //-         h5 Office Plants
+        //- // Single Portfolio Area
+        //- .col-12.col-sm-6.col-lg-6.single_portfolio_item.home-design
+        //-   // Portfolio Thumbnail
+        //-   .portfolio-thumbnail.bg-img(style='background-image: url(img/bg-img/22.jpg);')
+        //-   // Portfolio Hover Text
+        //-   .portfolio-hover-overlay
+        //-     a.portfolio-img.d-flex.align-items-center.justify-content-center(href='img/bg-img/22.jpg' title='Portfolio 7')
+        //-       .port-hover-text
+        //-         h3 Minimal Flower Store
+        //-         h5 Office Plants
   // ##### Portfolio Area End #####

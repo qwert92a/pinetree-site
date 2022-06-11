@@ -69,11 +69,11 @@ html(lang="ko")
                       i.fa.fa-user(aria-hidden="true")
                       span 로그인
                   // Cart
-                  .cart
-                    a(href="#")
-                      i.fa.fa-shopping-cart(aria-hidden="true")
-                      span 찜한 상품 
-                        span.cart-quantity (1)
+                  //- .cart
+                  //-   a(href="#")
+                  //-     i.fa.fa-shopping-cart(aria-hidden="true")
+                  //-     span 찜한 상품 
+                  //-       span.cart-quantity (1)
       // ***** Navbar Area *****
       .alazea-main-menu
         .classy-nav-container.breakpoint-off
@@ -142,9 +142,9 @@ html(lang="ko")
                       </ul>
                       </li>
                     li
-                      a(href="/products?page=1") 판매상품
+                      a(href='/products?page=1') 판매상품
                     li
-                      a(href="/gallery") 갤러리
+                      a(href="/gallery?page=1") 갤러리
                     li
                       a(href="/contact") 문의하기
                   // Search Icon
@@ -152,7 +152,7 @@ html(lang="ko")
                     i.fa.fa-search(aria-hidden="true")
                 // Navbar End
             // Search Form
-            .search-form
+            //- .search-form
               form(action="#", method="get")
                 input#search(type="search", name="search", placeholder="Type keywords &amp; press enter...")
                 button.d-none(type="submit")
@@ -267,15 +267,15 @@ html(lang="ko")
                 nav
                   ul
                     li
-                      a(href='#') 홈으로
+                      a(href="/") 홈으로
                     li
-                      a(href='#') 농장소개
+                      a(href='/about') 농장소개
                     li
-                      a(href='#') 판매상품
+                      a(href='/products?page=1') 판매상품
                     li
-                      a(href='#') 갤러리
+                      a(href='/gallery?page=1') 갤러리
                     li
-                      a(href='#') 문의하기
+                      a(href='/contact') 문의하기
     // ##### Footer Area End #####
 
 

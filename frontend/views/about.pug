@@ -14,12 +14,12 @@ block content
               li.breadcrumb-item
                 a(href='#')
                   i.fa.fa-home
-                  |  Home
+                  |  홈
               li.breadcrumb-item.active(aria-current='page')
-                | About
+                | 농장소개
   // ##### Breadcrumb Area End #####
   // ##### About Area Start #####
-  section.about-us-area
+  //- section.about-us-area
     .container
       .row.justify-content-between
         .col-12.col-lg-5
@@ -102,58 +102,58 @@ block content
           .border-line
   // ##### About Area End #####
   // ##### Service Area Start #####
-  section.our-services-area.bg-gray.section-padding-100-0
+  section.our-services-area.section-padding-100-0
     .container
       .row
         .col-12
           // Section Heading
           .section-heading.text-center
-            h2 OUR SERVICES
-            p We provide the perfect service for you.
-      .row.align-items-center.justify-content-between
+            h2 우리 형제농원에서는
+            p
+              | 40점 이상의 프리미엄 조경 소나무부터 주택용 조경수까지
+              | 다양한 조경수를 재배하고 있습니다.
+      .row.justify-content-between 
         .col-12.col-lg-5
           .alazea-service-area.mb-100
             // Single Service Area
-            .single-service-area.d-flex.align-items-center
+            .single-service-area.d-flex.align-items-center.wow.fadeInUp(data-wow-delay="100ms")
               // Icon
               .service-icon.mr-30
-                img(src='img/core-img/s1.png' alt='')
+                img(src="img/core-img/s1.png", alt="")
               // Content
               .service-content
-                h5 Plants Care
+                h5 20년 이상의 정성으로 키워낸 조경수
                 p
-                  | In Aenean purus, pretium sito amet sapien denim moste
-                  | consectet sedoni urna placerat sodales.service its.
+                  | 저희 농원에서는 20점 부터 40 ~ 45점까지 다양한 조경수를
+                  | 보유하고 있습니다.
             // Single Service Area
-            .single-service-area.d-flex.align-items-center
+            .single-service-area.d-flex.align-items-center.wow.fadeInUp(data-wow-delay="300ms")
               // Icon
               .service-icon.mr-30
-                img(src='img/core-img/s2.png' alt='')
+                img(src="img/core-img/s2.png", alt="")
               // Content
               .service-content
-                h5 Pressure Washing
-                p
-                  | In Aenean purus, pretium sito amet sapien denim moste
-                  | consectet sedoni urna placerat sodales.service its.
+                h5 다용도 조경수
+                p 시설 용, 주택 용 등 다양한 용도에 맞는 다양한 조경수를 보유하고 있습니다.
             // Single Service Area
-            .single-service-area.d-flex.align-items-center
+            .single-service-area.d-flex.align-items-center.wow.fadeInUp(data-wow-delay="500ms")
               // Icon
               .service-icon.mr-30
-                img(src='img/core-img/s3.png' alt='')
+                img(src="img/core-img/s3.png", alt="")
               // Content
               .service-content
-                h5 Tree Service &amp; Trimming
+                h5 판매 및 운반, 옮겨심기
                 p
-                  | In Aenean purus, pretium sito amet sapien denim moste
-                  | consectet sedoni urna placerat sodales.service its.
+                  | 조경수 구매 시, 구매자와의 상의 하에 원하는 장소까지 나무를
+                  | 운반, 옮겨 심어 드립니다.
         .col-12.col-lg-6
           .alazea-video-area.bg-overlay.mb-100
-            img(src='img/bg-img/23.jpg' alt='')
-            a.video-icon(href='http://www.youtube.com/watch?v=7HKoqNJtMTQ')
-              i.fa.fa-play(aria-hidden='true')
+            div(style='position: relative; width: 100%; padding-bottom: 56.25%')
+              iframe(style='position: absolute; width: 100%; height: 97%' src='https://www.youtube.com/embed/gYJ3u1ae2XQ' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+
   // ##### Service Area End #####
   // ##### Testimonial Area Start #####
-  section.testimonial-area.section-padding-100
+  section.testimonial-area.bg-gray.section-padding-100
     .container
       .row
         .col-12
@@ -163,65 +163,102 @@ block content
               .row.align-items-center
                 .col-12.col-md-6
                   .testimonial-thumb
-                    img(src='img/bg-img/13.jpg' alt='')
+                    img(src="img/profile/dadnson.jpg", alt="")
                 .col-12.col-md-6
                   .testimonial-content
                     // Section Heading
                     .section-heading
-                      h2 TESTIMONIAL
-                      p Some kind words from clients about Alazea
+                      h2 형제농원에 오신것을 환영합니다.
+                      //- p Some kind words from clients about Alazea
                     p
-                      | &ldquo;Alazea is a pleasure to work with. Their ideas are
-                      | creative, they came up with imaginative solutions to
-                      | some tricky issues, their landscaping and planting
-                      | contacts are equally excellent we have a beautiful but
-                      | also manageable garden as a result. Thank you!&rdquo;
+                      | “게임이 최고다”
+                      //- | “우리 농장은 20년 이상 다양한 크기와 모양을 가진 소나무들을 키우고 있습니다”
                     .testimonial-author-info
-                      h6 Mr. Nick Jonas
-                      p CEO of NAVATECH
+                      h6 심광선
+                      p 우리아빠
             // Single Testimonial Slide
             .single-testimonial-slide
               .row.align-items-center
                 .col-12.col-md-6
                   .testimonial-thumb
-                    img(src='img/bg-img/14.jpg' alt='')
+                    img(src="img/profile/momnson.jpg", alt="")
                 .col-12.col-md-6
                   .testimonial-content
                     // Section Heading
                     .section-heading
-                      h2 TESTIMONIAL
-                      p Some kind words from clients about Alazea
+                      h2 형제농원에 오신것을 환영합니다.
+                      //- p Some kind words from clients about Alazea
                     p
-                      | &ldquo;Alazea is a pleasure to work with. Their ideas are
-                      | creative, they came up with imaginative solutions to
-                      | some tricky issues, their landscaping and planting
-                      | contacts are equally excellent we have a beautiful but
-                      | also manageable garden as a result. Thank you!&rdquo;
+                      | “돈이 최고다”
                     .testimonial-author-info
-                      h6 Mr. Nazrul Islam
-                      p CEO of NAVATECH
+                      h6 유성미
+                      p 우리엄마
             // Single Testimonial Slide
             .single-testimonial-slide
               .row.align-items-center
                 .col-12.col-md-6
                   .testimonial-thumb
-                    img(src='img/bg-img/15.jpg' alt='')
+                    img(src="img/profile/bronsis.jpg", alt="")
                 .col-12.col-md-6
                   .testimonial-content
                     // Section Heading
                     .section-heading
-                      h2 TESTIMONIAL
-                      p Some kind words from clients about Alazea
+                      h2 형제농원에 오신것을 환영합니다.
+                      //- p Some kind words from clients about Alazea
                     p
-                      | &ldquo;Alazea is a pleasure to work with. Their ideas are
-                      | creative, they came up with imaginative solutions to
-                      | some tricky issues, their landscaping and planting
-                      | contacts are equally excellent we have a beautiful but
-                      | also manageable garden as a result. Thank you!&rdquo;
+                      | “누워있는게 최고다”
                     .testimonial-author-info
-                      h6 Mr. Jonas Nick
-                      p CEO of NAVATECH
+                      h6 심지은
+                      p 우리집에 서식하는 야생동물
+            // Single Testimonial Slide
+            .single-testimonial-slide
+              .row.align-items-center
+                .col-12.col-md-6
+                  .testimonial-thumb
+                    img(src="img/profile/son.jpg", alt="")
+                .col-12.col-md-6
+                  .testimonial-content
+                    // Section Heading
+                    .section-heading
+                      h2 형제농원에 오신것을 환영합니다.
+                      //- p Some kind words from clients about Alazea
+                    p
+                      | “세상 다 부질없다”
+                    .testimonial-author-info
+                      h6 심규철
+                      p 얼마전에 차임
   // ##### Testimonial Area End #####
+  // ##### Contact Area Info Start #####
+  .contact-area-info.section-padding-0-100(style='margin-top: 6em;')
+    .container
+      .row.align-items-center.justify-content-between
+        // Contact Thumbnail
+        .col-12.col-md-6
+          .contact--thumbnail
+            img(src='img/bg-img/25.jpg' alt='')
+        .col-12.col-md-5
+          // Section Heading
+          .section-heading
+            h2(style='margin-bottom: 0.7em;') 문의 정보
+            p 아래의 경로로 직접 문의 혹은 문의하기 페이지를 통해 편리하게 문의하실 수 있습니다.
+          // Contact Information
+          .contact-information
+            p
+              span 주소:
+              |  전라북도 고창군 성송면 사내리
+            p
+              span 연락처:
+              |  010 - 9981 - 9466
+            p
+              span 이메일:
+              |  brotherplantation@gmail.com
+            //- p
+            //-   span Open hours:
+            //-   |  Mon - Sun: 8 AM to 9 PM
+            //- p
+            //-   span Happy hours:
+            //-   |  Sat: 2 PM to 4 PM
+  // ##### Contact Area Info End #####
   // ##### Cool Facts Area Start #####
   section.cool-facts-area.bg-img.section-padding-100-0(style='background-image: url(img/bg-img/cool-facts.png)')
     .container
@@ -233,8 +270,9 @@ block content
               img(src='img/core-img/cf1.png' alt='')
             .cf-content
               h2
-                span.counter 20
-              h6 AWARDS
+                span.counter 30
+                span 주+
+              h6 40점
         // Single Cool Facts Area
         .col-12.col-sm-6.col-md-3
           .single-cool-fact.d-flex.align-items-center.justify-content-center.mb-100
@@ -242,8 +280,9 @@ block content
               img(src='img/core-img/cf2.png' alt='')
             .cf-content
               h2
-                span.counter 70
-              h6 PROJECTS
+                span.counter 200
+                span 주+
+              h6 35점
         // Single Cool Facts Area
         .col-12.col-sm-6.col-md-3
           .single-cool-fact.d-flex.align-items-center.justify-content-center.mb-100
@@ -251,9 +290,9 @@ block content
               img(src='img/core-img/cf3.png' alt='')
             .cf-content
               h2
-                span.counter 30
-                | +
-              h6 HAPPY CLIENTS
+                span.counter 300
+                span 주+
+              h6 30점
         // Single Cool Facts Area
         .col-12.col-sm-6.col-md-3
           .single-cool-fact.d-flex.align-items-center.justify-content-center.mb-100
@@ -261,15 +300,15 @@ block content
               img(src='img/core-img/cf4.png' alt='')
             .cf-content
               h2
-                span.counter 80
-                | K+
-              h6 REVENUE
+                span.counter 500
+                span 주+
+              h6 25점
     // Side Image
     .side-img.wow.fadeInUp(data-wow-delay='500ms')
       img(src='img/core-img/pot.png' alt='')
   // ##### Cool Facts Area End #####
   // ##### Team Area Start #####
-  section.team-area.section-padding-100-0
+  //- section.team-area.section-padding-100-0
     .container
       .row
         .col-12
@@ -359,3 +398,4 @@ block content
               h5 Pearl Kansas
               p Marketer
   // ##### Team Area End #####
+  

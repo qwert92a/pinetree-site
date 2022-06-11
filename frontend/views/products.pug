@@ -176,10 +176,10 @@ block content
                     .product-img
                       a(href='/products/'+product.id)
                         img(src=product.images[0] alt='')
-                      .product-meta.d-flex
-                        a.wishlist-btn(href='#')
-                          i.icon_heart_alt
-                        a.add-to-cart-btn(href='cart.html') 상세 페이지
+                      //- .product-meta.d-flex
+                      //-   a.wishlist-btn(href='#')
+                      //-     i.icon_heart_alt
+                      //-   a.add-to-cart-btn(href='cart.html') 상세 페이지
                         //- a.compare-btn(href='#')
                         //-   i.arrow_left-right_alt
                     // Product Info
@@ -358,18 +358,35 @@ block content
             // Pagination
             nav(aria-label='Page navigation')
               ul.pagination
-                li.page-item
-                  a.page-link(href='#')
-                    i.fa.fa-angle-left
+                if parseInt(page)-1 === 0
+                  li.page-item
+                    a.page-link(href='/products?page='+numPages)
+                      i.fa.fa-angle-left
+                else
+                  li.page-item
+                    a.page-link(href='/products?page='+(parseInt(page)-1))
+                      i.fa.fa-angle-left
                 - let n = 1;
                 while n <= numPages
-                  li.page-item
-                    a.page-link(href='/products?page='+n)= n++
+                  if n === parseInt(page)
+                    li.page-item
+                      a.page-link.active(href='/products?page='+n)= n++
+                  else
+                    li.page-item
+                      a.page-link(href='/products?page='+n)= n++
                 //- li.page-item
                 //-   a.page-link(href='#') 1
                 //- li.page-item
                 //-   a.page-link(href='#') 2
-                li.page-item
-                  a.page-link(href='#')
-                    i.fa.fa-angle-right
+                if parseInt(page) === parseInt(numPages)
+                  li.page-item
+                    a.page-link(href='/products?page=1')
+                      i.fa.fa-angle-right
+                else
+                  li.page-item
+                    a.page-link(href='/products?page='+(parseInt(page)+1))
+                      i.fa.fa-angle-right
+                //- li.page-item
+                //-   a.page-link(href='#')
+                //-     i.fa.fa-angle-right
   // ##### Shop Area End #####
