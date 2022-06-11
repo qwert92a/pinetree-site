@@ -58,14 +58,14 @@ app.get('/contact', (req, res) => {
   res.render('contact');
 });
 app.post('/contact', (req, res) => {
-  if(sendMail('brotherplantation@gmail.com', req.body)) {
-    res.json({success: true});
+  if (sendMail('brotherplantation@gmail.com', req.body)) {
+    res.json({ success: true });
   } else {
-    res.json({success: false});
+    res.json({ success: false });
   }
 });
 
-const PORT = process.env.PORT | 5000;
+const PORT = process.env.PORT;
 
 app.listen(PORT, () => {
   console.log(
