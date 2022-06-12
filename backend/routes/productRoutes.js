@@ -3,7 +3,6 @@ const router = express.Router();
 import expressAsyncHandler from 'express-async-handler';
 import Product from '../models/productModel.js';
 
-
 // @desc  Fetch all products
 // @route  GET /products?page=#
 // @access  Public
@@ -40,6 +39,7 @@ router.get(
       res.render('product-detail', { product });
     } else {
       res.status(404);
+      res.end();
     }
   })
 );
